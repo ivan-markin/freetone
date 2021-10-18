@@ -1,0 +1,96 @@
+.they-talk {
+  position: relative;
+  margin-bottom: 24px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 78px;
+    height: 160px;
+    background: linear-gradient(to right, #0D1033 0%, #0D1033 21.88%, rgba(15, 24, 55, 0) 100%);
+    position: absolute;
+    left: 360px;
+    top: 0;
+    z-index: 10;
+
+    @media (max-width: 1366px) {
+      left: 302px;
+    }
+
+    @media (max-width: 1024px) {
+      left: 262px;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 78px;
+    height: 160px;
+    background: linear-gradient(to left, #0D1033 0%, #0D1033 21.88%, rgba(15, 24, 55, 0) 100%);
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 22px;
+  }
+
+  &__title {
+    margin: 0 90px 10px 0;
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    position: relative;
+    right: -78px;
+    overflow-x: scroll;
+    padding-left: 24px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media (max-width: 1366px) {
+      right: -40px;
+    }
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: none;
+    height: 160px;
+    width: 330px;
+    border-radius: 9px;
+    border: rgba($color: #fff, $alpha: 0.1) 1px solid;
+    transition: all .2s;
+    cursor: pointer;
+    padding: 20px;
+    margin-right: 24px;
+
+    &:hover {
+      background-color: var(--color-primary);
+      border: var(--color-primary) 1px solid;
+    }
+
+    &-caption {
+      font-size: 16px;
+      color: white;
+      opacity: .3;
+    }
+
+    &-description {
+      font-size: 18px;
+      line-height: 1.5;
+      color: white;
+      margin: 0;
+    }
+  }
+}

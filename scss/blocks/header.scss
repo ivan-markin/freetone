@@ -1,0 +1,30 @@
+.header {
+  margin-bottom: 24px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    border-radius: 9px;
+    background-color: var(--panel-color);
+    position: relative;
+    padding: 0 20px;
+  }
+
+  &__menu {
+    display: block;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__locales {
+    display: block;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+}

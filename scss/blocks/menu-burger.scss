@@ -1,0 +1,16 @@
+.menu-burger {
+  display: none;
+  width: 20px;
+  height: 11px;
+  background: url('../../images/menu-burger-icon.svg') no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 22px;
+  top: calc(50% - 6px);
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}

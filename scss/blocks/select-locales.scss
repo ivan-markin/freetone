@@ -1,0 +1,45 @@
+.select-locales {
+  position: relative;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 106px;
+    position: relative;
+    border-radius: 6px;
+    background-color: #222757;
+    font-size: 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0 12px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: url('../../images/locale-icon.svg') no-repeat;
+      background-size: contain;
+      margin-right: 7px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 6px;
+      background: url('../../images/dropdown-arrow.svg') no-repeat;
+      background-size: contain;
+      position: absolute;
+      right: 12px;
+      top: calc(50% - 3px);
+    }
+  }
+
+  &__list {
+    display: none;
+    position: absolute;
+  }
+}

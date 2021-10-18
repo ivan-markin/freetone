@@ -1,0 +1,49 @@
+@import './normalize.scss';
+@import './fonts.scss';
+@import './variables';
+
+// Blocks
+@import './blocks/header.scss';
+@import './blocks/main-menu.scss';
+@import './blocks/select-locales.scss';
+@import './blocks/hero-section.scss';
+@import './blocks/primary-title.scss';
+@import './blocks/btn.scss';
+@import './blocks/indicators.scss';
+@import './blocks/secondary-title.scss';
+@import './blocks/they-talk.scss';
+@import './blocks/gallery.scss';
+@import './blocks/menu-burger.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'TT Firs', 'Roboto', sans-serif;
+  color: white;
+  background: #0D1033;
+  width: 100%;
+}
+
+.container {
+  min-width: 320px;
+  padding: 24px 0 50px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1548px;
+  padding: 0 78px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1366px) {
+    padding: 0 40px;
+  }
+
+  @media screen and (max-width: 420px) {
+    padding: 0 12px;
+  }
+}
+
+
