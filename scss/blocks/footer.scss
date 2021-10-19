@@ -16,6 +16,10 @@
     @media (max-width: 768px) {
       flex-direction: column;
     }
+
+    @media (max-width: 420px) {
+      padding: 20px;
+    }
   }
 
   &__copyrights {
