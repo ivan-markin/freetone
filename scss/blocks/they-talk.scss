@@ -20,6 +20,10 @@
     @media (max-width: 1024px) {
       left: 262px;
     }
+
+    @media (max-width: 420px) {
+      left: 130px;
+    }
   }
 
   &::after {
@@ -41,6 +45,10 @@
 
   &__title {
     margin: 0 90px 10px 0;
+
+    @media (max-width: 420px) {
+      margin-right: 30px;
+    }
   }
 
   &__slider {
@@ -58,6 +66,10 @@
 
     @media (max-width: 1366px) {
       right: -40px;
+    }
+
+    @media (max-width: 420px) {
+      right: -12px;
     }
   }
 

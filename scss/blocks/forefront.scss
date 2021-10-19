@@ -1,0 +1,50 @@
+.forefront {
+  margin-bottom: 24px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 18px;
+    min-height: 820px;
+    background-color: var(--panel-color);
+    padding: 60px;
+
+    @media (max-width: 768px) {
+      padding: 40px;
+    }
+
+    @media (max-width: 420px) {
+      padding: 20px;
+    }
+  }
+
+  &__title {
+    max-width: 675px;
+    margin: 0;
+  }
+
+  &__article {
+    max-width: 50%;
+    margin-bottom: 60px;
+
+    @media (max-width: 1024px) {
+      max-width: none;
+    }
+
+    &-title {
+      width: fit-content;
+      margin: 0 0 12px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 0;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+}

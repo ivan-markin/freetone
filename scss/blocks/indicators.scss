@@ -10,6 +10,10 @@
       overflow-x: scroll;
       width: calc(100% + 40px);
 
+      @media (max-width: 420px) {
+        width: calc(100% + 12px);
+      }
+
       &::-webkit-scrollbar {
         display: none;
       }
