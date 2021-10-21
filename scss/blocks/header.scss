@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 9999;
   margin-bottom: 24px;
 
   &__container {
@@ -7,7 +9,7 @@
     justify-content: space-between;
     height: 64px;
     border-radius: 9px;
-    background-color: var(--panel-color);
+    background-color: var(--color-cards);
     position: relative;
     padding: 0 20px;
   }

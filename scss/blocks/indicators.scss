@@ -28,7 +28,7 @@
     min-width: 258px;
     min-height: 297px;
     border-radius: 18px;
-    background-color: var(--panel-color);
+    background-color: var(--color-cards);
     padding: 60px;
 
     &:not(:last-of-type) {
@@ -58,6 +58,7 @@
     font-weight: 400;
     color: white;
     line-height: 1.2;
+    transition: all 0.2s ease-in 0s;
     margin-bottom: 8px;
 
     @media (max-width: 1440px) {

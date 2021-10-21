@@ -11,20 +11,68 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" data-scroll-container>
 
-    <header class="header">
+    <div class="submenu-popup">
       <div class="wrap">
-        <div class="header__container">
+        <div class="submenu-popup__container">
+          <div class="submenu-popup__title-block">
+            <p class="submenu-popup__description paragraph-text">
+              One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+              horrible vermin.
+            </p>
+            <h2 class="submenu-popup__title secondary-title">Network</h2>
+          </div>
+          <ul class="submenu-popup__menu">
+            <li class="submenu-popup__menu-item"><a href="">About</a></li>
+            <li class="submenu-popup__menu-item"><a href="">Perfomance</a></li>
+            <li class="submenu-popup__menu-item"><a href="">Block Explorer</a></li>
+            <li class="submenu-popup__menu-item"><a href="">Fourth</a></li>
+            <li class="submenu-popup__menu-item"><a href="">Fifth Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-menu-popup">
+      <a href="">
+        <img class="mobile-menu-popup__logo" src="./images/freeton-logo.svg" alt="">
+      </a>
+      <button class="mobile-menu-popup__close"></button>
+      <nav class="mobile-menu">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="">Developers</a>
+            <ul class="mobile-menu__sublist">
+              <li class="mobile-menu__subitem"><a class="external-link" href="">Get started</a></li>
+              <li class="mobile-menu__subitem"><a class="external-link" href="">Github</a></li>
+            </ul>
+          </li>
+          <li class="mobile-menu__item"><a href="">Ecosystem</a></li>
+          <li class="mobile-menu__item"><a href="">Community</a></li>
+          <li class="mobile-menu__item">
+            <a href="">Network</a>
+            <ul class="mobile-menu__sublist">
+              <li class="mobile-menu__subitem"><a href="">About</a></li>
+              <li class="mobile-menu__subitem"><a class="external-link" href="">Block exlorer</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header" data-scroll-section>
+      <div class="wrap">
+        <div class="header__container" data-scroll>
           <a href="">
             <img src="./images/freeton-logo.svg" alt="">
           </a>
           <nav class="header__menu main-menu">
             <ul>
-              <li><a href="">Developers</a></li>
-              <li><a href="">Community</a></li>
-              <li><a href="">Network</a></li>
-              <li><a href="">Ecosystem</a></li>
+              <li><a class="main-menu__item expanded" href="">Developers</a></li>
+              <li><a class="main-menu__item" href="">Community</a></li>
+              <li><a class="main-menu__item expanded" href="">Network</a></li>
+              <li><a class="main-menu__item" href="">Ecosystem</a></li>
             </ul>
           </nav>
           <div class="header__locales select-locales">
@@ -32,6 +80,8 @@
             <ul class="select-locales__list">
               <li class="select-locales__item">English</li>
               <li class="select-locales__item">Russian</li>
+              <li class="select-locales__item">German</li>
+              <li class="select-locales__item">Spanish</li>
             </ul>
           </div>
 
@@ -42,16 +92,16 @@
 
     <main>
 
-      <section class="hero-section">
+      <section class="hero-section" data-scroll-section>
         <div class="wrap">
           <div class="hero-section__container">
-            <h1 class="hero-section__title primary-title">
+            <h1 class="hero-section__title primary-title" data-scroll>
               FT, the fastest.<br>Scalability happens here
             </h1>
-            <p class="hero-section__description">
+            <p class="hero-section__description" data-scroll>
               Develop your next solution in the truly decentralized Free TON network. It’s the fastest. It’s proven. Go and see.
             </p>
-            <div class="hero-section__cta">
+            <div class="hero-section__cta" data-scroll>
               <a class="btn btn_primary" href="">Go building</a>
               <a class="btn btn_secondary" href="">Check documentation</a>
             </div>
@@ -59,9 +109,9 @@
         </div>
       </section>
 
-      <section class="indicators">
+      <section class="indicators" data-scroll-section>
         <div class="wrap">
-          <div class="indicators__container">
+          <div class="indicators__container" data-scroll>
             <div class="indicators__item">
               <h2 class="indicators__title">19&nbsp;707&nbsp;017</h2>
               <p class="indicators__caption">Total Transactions</p>
@@ -82,10 +132,10 @@
         </div>
       </section>
 
-      <section class="they-talk">
+      <section class="they-talk" data-scroll-section>
         <div class="wrap">
           <div class="they-talk__container">
-            <h2 class="they-talk__title secondary-title">They<br>talk</h2>
+            <h2 class="they-talk__title secondary-title" data-scroll>They<br>talk</h2>
             <div class="they-talk__slider">
               <div class="they-talk__slide">
                 <span class="they-talk__slide-caption">24 Sep</span>
@@ -118,17 +168,17 @@
 
       <section class="gallery">
         <div class="wrap">
-          <div class="gallery__container">
+          <div class="gallery__container" data-scroll-section>
             <div class="gallery__item gallery__item_large">
-              <h2 class="gallery__item-title secondary-title">Freeton is</h2>
-              <p>
+              <h2 class="gallery__item-title secondary-title" data-scroll>Freeton is</h2>
+              <p data-scroll>
                 Fast, secure, scalable. Handling millions of transactions per second since 2018. A huge distributed supercomputer or
                 rather "super server" that hosts and provides a variety of services
               </p>
             </div>
             <div class="gallery__item">
-              <h2 class="gallery__item-title secondary-title">TON bridge</h2>
-              <p>
+              <h2 class="gallery__item-title secondary-title" data-scroll>TON bridge</h2>
+              <p data-scroll>
                 The gate to DeFi
               </p>
             </div>
@@ -142,7 +192,158 @@
         </div>
       </section>
 
-      <section class="forefront">
+      <section class="ecosystem" data-scroll-section>
+        <div class="wrap">
+          <div class="ecosystem__container">
+            <div class="ecosystem__blocks-container">
+              <div class="ecosystem__blocks" data-scroll data-scroll-direction="horizontal">
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block-spacer ecosystem__block-spacer_225"></div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block-spacer ecosystem__block-spacer_374"></div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block-spacer ecosystem__block-spacer_374"></div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block-spacer ecosystem__block-spacer_374"></div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block-spacer ecosystem__block-spacer_225"></div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block-spacer ecosystem__block-spacer_374"></div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block-spacer ecosystem__block-spacer_225"></div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+                <div class="ecosystem__block">
+                  <span class="ecosystem__block-logo"></span>
+                  <span class="ecosystem__block-title">TON Surf</span>
+                </div>
+              </div>
+            </div>
+            <h2 class="ecosystem__title secondary-title">Freeton ecosystem</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="forefront" data-scroll-section>
         <div class="wrap">
           <div class="forefront__container">
             <div class="forefront__article">
@@ -168,7 +369,7 @@
         </div>
       </section>
 
-      <section class="gallery">
+      <section class="gallery" data-scroll-section>
         <div class="wrap">
           <div class="gallery__container">
             <div class="gallery__item gallery__item_large">
@@ -202,7 +403,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" data-scroll-section>
       <div class="wrap">
         <div class="footer__container">
           <div class="footer__copyrights">

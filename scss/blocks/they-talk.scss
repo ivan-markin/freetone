@@ -88,8 +88,8 @@
     margin-right: 24px;
 
     &:hover {
-      background-color: var(--color-primary);
-      border: var(--color-primary) 1px solid;
+      background-color: var(--color-hover);
+      border: var(--color-hover) 1px solid;
     }
 
     &-caption {
@@ -102,6 +102,7 @@
       font-size: 18px;
       line-height: 1.5;
       color: white;
+      transition: all 0.2s ease-in 0s;
       margin: 0;
     }
   }

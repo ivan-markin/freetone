@@ -6,6 +6,7 @@
   font-size: 18px;
   color: white;
   text-decoration: none;
+  transition: all .2s;
   padding: 0 20px;
 
   @media (max-width: 768px) {
@@ -16,10 +17,18 @@
   }
 
   &_primary {
-    background-color: var(--color-primary);
+    background-color: var(--color-hover);
+
+    &:hover {
+      background-color: #5C6BFD;
+    }
   }
 
   &_secondary {
     border: rgba($color: #fff, $alpha: .1) 1px solid;
+
+    &:hover {
+      border: var(--color-hover) 1px solid;
+    }
   }
 }

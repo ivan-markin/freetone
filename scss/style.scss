@@ -1,6 +1,7 @@
 @import './normalize.scss';
 @import './fonts.scss';
 @import './variables';
+@import './locomotive-scroll.scss';
 
 // Blocks
 @import './blocks/header.scss';
@@ -17,6 +18,12 @@
 @import './blocks/forefront.scss';
 @import './blocks/block-title.scss';
 @import './blocks/footer.scss';
+@import './blocks/mobile-menu-popup.scss';
+@import './blocks/mobile-menu.scss';
+@import './blocks/external-link.scss';
+@import './blocks/submenu-popup.scss';
+@import './blocks/paragraph-text.scss';
+@import './blocks/ecosystem.scss';
 
 * {
   box-sizing: border-box;
@@ -25,6 +32,9 @@
 body {
   font-family: 'TT Firs', 'Roboto', sans-serif;
   color: white;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background: #0D1033;
   width: 100%;
 }

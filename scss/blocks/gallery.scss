@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: var(--panel-color);
+    background: var(--color-cards);
     border-radius: 18px;
     transition: all .2s;
     cursor: pointer;
@@ -32,7 +32,7 @@
     }
 
     &:hover {
-      background: var(--panel-hover-color);
+      background: var(--color-hover);
     }
 
     &-title {
@@ -43,6 +43,7 @@
       font-size: 18px;
       line-height: 1.5;
       color: white;
+      transition: all 0.2s ease-in 0s;
       margin: 0;
 
       &:not(:last-of-type) {

@@ -7,6 +7,7 @@
     li {
       list-style: none;
       font-size: 18px;
+      transition: all 0.2s ease-in 0s;
 
       &:not(:last-of-type) {
         margin-right: 56px;
@@ -16,9 +17,32 @@
         color: white;
         text-decoration: none;
         transition: all .1s;
+        position: relative;
+
+        &.expanded {
+          &:after {
+            content: '';
+            display: block;
+            width: 3px;
+            height: 3px;
+            border-radius: 1px;
+            background-color: var(--color-hover);
+            position: absolute;
+            top: 0;
+            right: -7px;
+          }
+
+          &:hover:after {
+            background-color: var(--color-accent);
+          }
+
+          &.active:after {
+            background-color: var(--color-accent);
+          }
+        }
 
         &:hover {
-          color: var(--color-primary);
+          color: var(--color-hover);
         }
       }
     }
