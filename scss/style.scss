@@ -2,6 +2,8 @@
 @import './fonts.scss';
 @import './variables';
 @import './locomotive-scroll.scss';
+@import './swiper/swiper.scss';
+@import './swiper/pagination.scss';
 
 // Blocks
 @import './blocks/header.scss';
@@ -24,6 +26,19 @@
 @import './blocks/submenu-popup.scss';
 @import './blocks/paragraph-text.scss';
 @import './blocks/ecosystem.scss';
+@import './blocks/features-block.scss';
+@import './blocks/block-text.scss';
+@import './blocks/buttons-grid.scss';
+@import './blocks/button-link.scss';
+@import './blocks/build-integrate.scss';
+@import './blocks/card.scss';
+@import './blocks/text-link.scss';
+@import './blocks/dev-parameters.scss';
+@import './blocks/parameters-caption.scss';
+@import './blocks/ton-tools.scss';
+@import './blocks/github-docs.scss';
+@import './blocks/videos.scss';
+@import './blocks/nav-button.scss';
 
 * {
   box-sizing: border-box;

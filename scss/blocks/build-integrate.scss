@@ -1,0 +1,30 @@
+.build-integrate {
+  margin-bottom: 24px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 820px;
+
+    &-description {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 1024px) {
+      .button-link {
+        grid-column: 1 / 3;
+      }
+    }
+  }
+}

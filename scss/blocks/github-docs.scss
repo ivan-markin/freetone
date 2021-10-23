@@ -1,0 +1,44 @@
+.github-docs {
+  margin-bottom: 60px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+
+    &-icon {
+      margin-bottom: 36px;
+    }
+
+    &-description {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 1120px) {
+      .button-link {
+        grid-column: 1 / 3;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .button-link__ext-name {
+        display: none;
+      }
+    }
+  }
+
+  .button-link {
+    color: var(--color-hover);
+
+    &:hover {
+      color: white;
+    }
+  }
+}

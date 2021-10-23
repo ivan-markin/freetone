@@ -1,0 +1,45 @@
+.features-block {
+  margin-bottom: 24px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    padding: 60px 60px 64px;
+
+    @media (max-width: 1024px) {
+      padding: 40px;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 420px) {
+      padding: 20px;
+    }
+  }
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-right: 40px;
+
+      @media (max-width: 768px) {
+        margin: 0 0 40px 0;
+      }
+    }
+
+    &-icon {
+      margin-bottom: 12px;
+    }
+
+    &-title {
+      margin: 0 0 16px;
+    }
+
+    &-description {
+      margin: 0;
+    }
+  }
+}

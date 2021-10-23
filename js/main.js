@@ -1,4 +1,47 @@
 import LocomotiveScroll from 'locomotive-scroll';
+import Swiper from 'swiper';
+import SwiperCore, { Navigation, Pagination } from 'swiper/core';
+
+SwiperCore.use([Navigation, Pagination]);
+
+const swiperVideo = new Swiper('.swiper-videos', {
+  slidesPerView: 1,
+  spaceBetween: 12,
+  breakpoints: {
+    769: {
+      slidesPerView: 2,
+      spaceBetween: 12
+    },
+    1025: {
+      slidesPerView: 3,
+      spaceBetween: 32
+    }
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-videos-pagination',
+    type: 'fraction'
+  }
+})
+
+const swiperTools = new Swiper('.swiper-tools', {
+  slidesPerView: 1,
+  spaceBetween: 12,
+  breakpoints: {
+    769: {
+      slidesPerView: 2,
+      spaceBetween: 24
+    }
+  },
+  pagination: {
+    el: '.swiper-tools-pagination',
+    type: 'bullets',
+    clickable: true
+  }
+})
 
 const scroll = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
@@ -12,7 +55,6 @@ const localesSelects = document.querySelectorAll('.select-locales__button');
 const menuLinks = document.querySelectorAll('.main-menu__item');
 const submenuPopup = document.querySelector('.submenu-popup');
 const submenuPopupContainer = document.querySelector('.submenu-popup__container');
-let timeoutID;
 
 menuBurgerEl.addEventListener('click', () => {
   menuPopupEl.classList.add('active');
