@@ -7,6 +7,11 @@
     gap: 24px;
     position: relative;
     padding-bottom: 42px;
+    // overflow-x: hidden;
+
+    // &::-webkit-scrollbar {
+    //   display: none;
+    // }
   }
 
   &__item {

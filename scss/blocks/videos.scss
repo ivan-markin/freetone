@@ -25,6 +25,7 @@
 
       @media (max-width: 768px) {
         font-size: 20px;
+        min-width: 100px;
       }
 
       &-title {
@@ -57,7 +58,11 @@
 
   &__container {
     display: flex;
-    overflow-x: hidden;
+    // overflow-x: hidden;
+
+    // &::-webkit-scrollbar {
+    //   display: none;
+    // }
   }
 
   &__item {
