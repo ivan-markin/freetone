@@ -23,6 +23,11 @@
     background-size: contain;
   }
 
+  &_large {
+    width: 60px;
+    height: 60px;
+  }
+
   &_prev {
     transform: rotate(.5turn);
   }

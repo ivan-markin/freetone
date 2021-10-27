@@ -1,0 +1,21 @@
+.dao-community {
+  margin-bottom: 92px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-height: 820px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__description {
+    width: 45%;
+    margin: 0 0 20px;
+  }
+}

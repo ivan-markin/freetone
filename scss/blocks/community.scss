@@ -1,0 +1,36 @@
+.community {
+  margin-bottom: 24px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    &_discord {
+      background-color: #7789D4;
+    }
+
+    &_telegram {
+      background-color: #5DADDD;
+    }
+
+    &_youtube {
+      background-color: #D43929;
+    }
+
+    &_facebook {
+      background-color: #3975EA;
+    }
+
+    &_twitter {
+      background-color: #5DA4D5;
+    }
+
+    .buttons-grid {
+      width: 45%;
+    }
+
+    .button-link {
+      background-color: rgba($color: #fff, $alpha: .1);
+    }
+  }
+}

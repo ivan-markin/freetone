@@ -1,0 +1,15 @@
+.text-input {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 9px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: white;
+  height: 60px;
+  padding: 0 60px 0 24px;
+
+  &::placeholder {
+    opacity: .5;
+    color: white;
+  }
+}

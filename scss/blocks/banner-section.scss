@@ -1,0 +1,43 @@
+.banner-section {
+  margin-bottom: 60px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 280px;
+    border-radius: 18px;
+    background: #1B2159 url('../../images/banner-example-image.svg') no-repeat 90% bottom;
+    padding: 0 60px;
+
+    @media (max-width: 768px) {
+      min-height: 660px;
+      justify-content: flex-start;
+      padding: 40px;
+    }
+
+    @media (max-width: 420px) {
+      padding: 40px 20px 40px;
+    }
+  }
+
+  &__title-block {
+    max-width: 420px;
+  }
+
+  &__title {
+    margin: 0 0 20px;
+  }
+
+  &__description {
+    margin: 0 0 20px;
+  }
+
+  &__image {
+    width: 58%;
+  }
+
+  &__button {
+    width: fit-content;
+  }
+}

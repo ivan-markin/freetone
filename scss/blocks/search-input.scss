@@ -1,0 +1,21 @@
+.search-input {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+
+  &__button {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: url('../../images/search-icon.svg') no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 24px;
+    cursor: pointer;
+  }
+
+  .text-input {
+    width: 100%;
+  }
+}

@@ -1,0 +1,96 @@
+.ecosystem-top {
+  margin-bottom: 64px;
+
+  &__slider {
+    position: relative;
+    padding-bottom: 30px;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 345px;
+    background: no-repeat center;
+    background-size: cover;
+    position: relative;
+
+    @media (max-width: 768px) {
+      min-height: 588px;
+    }
+
+    &#ecosystemSlide1,
+    &#ecosystemSlide3 {
+      background-image: url('../../images/ecosystem-bg-left.png');
+    }
+
+    &#ecosystemSlide2 {
+      background-image: url('../../images/ecosystem-bg-right.png');
+    }
+
+    &-title {
+      margin: 0 0 8px;
+    }
+
+    &-description {
+      max-width: 60%;
+      margin: 0;
+
+      @media (max-width: 1024px) {
+        max-width: none;
+      }
+    }
+  }
+
+  &__container {
+    padding-top: 90px;
+
+    @media (max-width: 768px) {
+      padding-top: 32px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 20px;
+  }
+
+  &__description {
+    margin: 0 0 20px;
+  }
+
+  &__navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: calc(50% - 45px);
+    width: 100%;
+    z-index: 9;
+    padding: 0 40px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    .nav-button {
+      z-index: 11;
+    }
+
+    .swiper-button-disabled {
+      opacity: 0;
+    }
+  }
+
+  &__link {
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+    }
+  }
+}

@@ -43,6 +43,26 @@ const swiperTools = new Swiper('.swiper-tools', {
   }
 })
 
+const swiperEcosystem = new Swiper('.swiper-ecosystem', {
+  slidesPerView: 1,
+  spaceBetween: 12,
+  breakpoints: {
+    769: {
+      slidesPerView: 2,
+      spaceBetween: 24
+    }
+  },
+  pagination: {
+    el: '.swiper-ecosystem-pagination',
+    type: 'bullets',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.ecosystem-top-button-next',
+    prevEl: '.ecosystem-top-button-prev',
+  },
+})
+
 const scroll = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
   smooth: true
