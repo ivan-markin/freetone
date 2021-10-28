@@ -1,6 +1,10 @@
 .dev-parameters {
   margin-bottom: 60px;
 
+  &_community {
+    margin-bottom: 24px;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

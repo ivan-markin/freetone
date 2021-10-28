@@ -1,5 +1,5 @@
 .dao-community {
-  margin-bottom: 92px;
+  margin-bottom: 24px;
 
   &__container {
     display: flex;
@@ -17,5 +17,13 @@
   &__description {
     width: 45%;
     margin: 0 0 20px;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+
+    @media (max-width: 420px) {
+      width: 100%;
+    }
   }
 }
