@@ -13,7 +13,7 @@
 <body>
   <div class="container" data-scroll-container>
 
-    <div class="submenu-popup">
+    <div class="submenu-popup" id="submenuNetwork">
       <div class="wrap">
         <div class="submenu-popup__container">
           <div class="submenu-popup__title-block">
@@ -29,6 +29,20 @@
             <li class="submenu-popup__menu-item"><a href="">Block Explorer</a></li>
             <li class="submenu-popup__menu-item"><a href="">Fourth</a></li>
             <li class="submenu-popup__menu-item"><a href="">Fifth Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="submenu-popup" id="submenuDevelopers">
+      <div class="wrap">
+        <div class="submenu-popup__container">
+          <div class="submenu-popup__title-block">
+            <h2 class="submenu-popup__title secondary-title">Developers</h2>
+          </div>
+          <ul class="submenu-popup__menu">
+            <li class="submenu-popup__menu-item"><a class="external-link" href="">Get started</a></li>
+            <li class="submenu-popup__menu-item"><a class="external-link" href="">Github</a></li>
           </ul>
         </div>
       </div>
@@ -69,9 +83,9 @@
           </a>
           <nav class="header__menu main-menu">
             <ul>
-              <li><a class="main-menu__item expanded" href="developers.html">Developers</a></li>
+              <li><a class="main-menu__item expanded" href="developers.html" id="developersLink">Developers</a></li>
               <li><a class="main-menu__item" href="community.html">Community</a></li>
-              <li><a class="main-menu__item expanded" href="">Network</a></li>
+              <li><a class="main-menu__item expanded" href="" id="networkLink">Network</a></li>
               <li><a class="main-menu__item" href="ecosystem.html">Ecosystem</a></li>
             </ul>
           </nav>
@@ -95,15 +109,22 @@
       <section class="hero-section" data-scroll-section>
         <div class="wrap">
           <div class="hero-section__container">
-            <h1 class="hero-section__title primary-title" data-scroll>
-              FT, the fastest.<br>Scalability happens here
-            </h1>
-            <p class="hero-section__description" data-scroll>
-              Develop your next solution in the truly decentralized Free TON network. It’s the fastest. It’s proven. Go and see.
-            </p>
-            <div class="hero-section__cta" data-scroll>
-              <a class="btn btn_primary" href="">Go building</a>
-              <a class="btn btn_secondary" href="">Check documentation</a>
+            <div class="hero-section__text-content">
+              <h1 class="hero-section__title primary-title" data-scroll>
+                FT, the fastest.<br>Scalability happens here
+              </h1>
+              <p class="hero-section__description" data-scroll>
+                Develop your next solution in the truly decentralized Free TON network. It’s the fastest. It’s proven.
+                Go
+                and see.
+              </p>
+              <div class="hero-section__cta" data-scroll>
+                <a class="btn btn_primary" href="">Go building</a>
+                <a class="btn btn_secondary" href="">Check documentation</a>
+              </div>
+            </div>
+            <div class="hero-section__bg">
+              <video src="./images/main-hero.mp4" loop autoplay muted></video>
             </div>
           </div>
         </div>
@@ -135,31 +156,37 @@
       <section class="they-talk" data-scroll-section>
         <div class="wrap">
           <div class="they-talk__container">
-            <h2 class="they-talk__title secondary-title" data-scroll>They<br>talk</h2>
-            <div class="they-talk__slider">
-              <div class="they-talk__slide">
-                <span class="they-talk__slide-caption">24 Sep</span>
-                <p class="they-talk__slide-description">
-                  Read the world’s number one crypto media resource
-                </p>
+            <h2 class="they-talk__title secondary-title" data-scroll>They talk</h2>
+            <div class="they-talk__slider swiper-theytalk">
+              <div class="swiper-wrapper">
+                <div class="they-talk__slide swiper-slide">
+                  <span class="they-talk__slide-caption">24 Sep</span>
+                  <p class="they-talk__slide-description">
+                    Read the world’s number one crypto media resource
+                  </p>
+                </div>
+                <div class="they-talk__slide swiper-slide">
+                  <span class="they-talk__slide-caption">24 Sep</span>
+                  <p class="they-talk__slide-description">
+                    Read the world’s number one crypto media resource
+                  </p>
+                </div>
+                <div class="they-talk__slide swiper-slide">
+                  <span class="they-talk__slide-caption">24 Sep</span>
+                  <p class="they-talk__slide-description">
+                    Read the world’s number one crypto media resource
+                  </p>
+                </div>
+                <div class="they-talk__slide swiper-slide">
+                  <span class="they-talk__slide-caption">24 Sep</span>
+                  <p class="they-talk__slide-description">
+                    Read the world’s number one crypto media resource
+                  </p>
+                </div>
               </div>
-              <div class="they-talk__slide">
-                <span class="they-talk__slide-caption">24 Sep</span>
-                <p class="they-talk__slide-description">
-                  Read the world’s number one crypto media resource
-                </p>
-              </div>
-              <div class="they-talk__slide">
-                <span class="they-talk__slide-caption">24 Sep</span>
-                <p class="they-talk__slide-description">
-                  Read the world’s number one crypto media resource
-                </p>
-              </div>
-              <div class="they-talk__slide">
-                <span class="they-talk__slide-caption">24 Sep</span>
-                <p class="they-talk__slide-description">
-                  Read the world’s number one crypto media resource
-                </p>
+              <div class="they-talk__navigation-buttons">
+                <button class="nav-button nav-button_large nav-button_prev theytalk-button-prev"></button>
+                <button class="nav-button nav-button_large nav-button_next theytalk-button-next"></button>
               </div>
             </div>
           </div>
@@ -172,7 +199,8 @@
             <div class="gallery__item gallery__item_large">
               <h2 class="gallery__item-title secondary-title" data-scroll>Freeton is</h2>
               <p data-scroll>
-                Fast, secure, scalable. Handling millions of transactions per second since 2018. A huge distributed supercomputer or
+                Fast, secure, scalable. Handling millions of transactions per second since 2018. A huge distributed
+                supercomputer or
                 rather "super server" that hosts and provides a variety of services
               </p>
             </div>
@@ -196,146 +224,44 @@
         <div class="wrap">
           <div class="ecosystem__container">
             <div class="ecosystem__blocks-container">
-              <div class="ecosystem__blocks" data-scroll data-scroll-direction="horizontal">
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
+              <div class="ecosystem__blocks" data-scroll data-scroll-direction="horizontal" data-scroll-speed="4">
                 <div class="ecosystem__block-spacer ecosystem__block-spacer_225"></div>
-                <div class="ecosystem__block">
+                <a class="ecosystem__block" href="https://t.me/freetondevru" target="_blank">
                   <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
+                  <span class="ecosystem__block-title">RU_Developers_Chat</span>
+                </a>
+                <a class="ecosystem__block" href="https://t.me/freetondev_ru" target="_blank">
                   <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
+                  <span class="ecosystem__block-title">RU_Developers_Channel</span>
+                </a>
+                <a class="ecosystem__block" href="https://t.me/ton_sdk" target="_blank">
                   <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
+                  <span class="ecosystem__block-title">EN_SDK_Chat</span>
+                </a>
                 <div class="ecosystem__block-spacer ecosystem__block-spacer_374"></div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
                 <div class="ecosystem__block-spacer ecosystem__block-spacer_374"></div>
-                <div class="ecosystem__block">
+                <a class="ecosystem__block" href="https://t.me/tondev_en" target="_blank">
                   <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block-spacer ecosystem__block-spacer_374"></div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
+                  <span class="ecosystem__block-title">EN_Developers_Chat</span>
+                </a>
                 <div class="ecosystem__block-spacer ecosystem__block-spacer_225"></div>
-                <div class="ecosystem__block">
+                <a class="ecosystem__block" href="https://t.me/TON_DEV" target="_blank">
                   <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
+                  <span class="ecosystem__block-title">EN_Developers_Channel</span>
+                </a>
+                <a class="ecosystem__block" href="https://t.me/Tonlabs" target="_blank">
                   <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
+                  <span class="ecosystem__block-title">EN_TONLabs_Info_Channel</span>
+                </a>
+                <a class="ecosystem__block" href="https://t.me/ton_validators_ru" target="_blank">
                   <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block-spacer ecosystem__block-spacer_374"></div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
+                  <span class="ecosystem__block-title">RU_Validators_Chat</span>
+                </a>
                 <div class="ecosystem__block-spacer ecosystem__block-spacer_225"></div>
-                <div class="ecosystem__block">
+                <a class="ecosystem__block" href="https://t.me/freetonvalidators" target="_blank">
                   <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
-                <div class="ecosystem__block">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">TON Surf</span>
-                </div>
+                  <span class="ecosystem__block-title">EN_Validators_Chat</span>
+                </a>
               </div>
             </div>
             <h2 class="ecosystem__title secondary-title">Freeton ecosystem</h2>
@@ -349,7 +275,8 @@
             <div class="forefront__article">
               <h3 class="forefront__article-title block-title">Technology to surprise you</h3>
               <p>
-                A flexible multichain platform. Turing-complete smart contracts, multi-crypto value transfer, micropayment channels
+                A flexible multichain platform. Turing-complete smart contracts, multi-crypto value transfer,
+                micropayment channels
                 &
                 off-chain payment networks — just dive into it
               </p>
@@ -375,14 +302,17 @@
             <div class="gallery__item gallery__item_large">
               <h2 class="gallery__item-title secondary-title">Build with FT</h2>
               <p>
-                Developers are the backbone. That is why the FT documents are designed so you can easily find anything you need.
+                Developers are the backbone. That is why the FT documents are designed so you can easily find anything
+                you need.
               </p>
               <p>
-                Community is the fuel. It is here for you if you want to integrate the TON Crystal token or FreeTON blockchain into your
+                Community is the fuel. It is here for you if you want to integrate the TON Crystal token or FreeTON
+                blockchain into your
                 project.
               </p>
               <p>
-                The network is a live organizm. It listens to its users’ voices and adapts to their needs. This is what is called
+                The network is a live organizm. It listens to its users’ voices and adapts to their needs. This is what
+                is called
                 decentralization.
               </p>
             </div>
@@ -395,7 +325,8 @@
             <div class="gallery__item">
               <h2 class="gallery__item-title secondary-title">Validators</h2>
               <p>
-                Exactly how validators’ place should look like in 2k21. Easy to set up, low hardware requirements, decent profit
+                Exactly how validators’ place should look like in 2k21. Easy to set up, low hardware requirements,
+                decent profit
               </p>
             </div>
           </div>

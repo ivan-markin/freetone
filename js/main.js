@@ -63,6 +63,18 @@ const swiperEcosystem = new Swiper('.swiper-ecosystem', {
   },
 })
 
+const swiperTheytalk = new Swiper('.swiper-theytalk', {
+  freeMode: {
+    enabled: true,
+    sticky: true,
+  },
+  slidesPerView: 'auto',
+  navigation: {
+    nextEl: '.theytalk-button-next',
+    prevEl: '.theytalk-button-prev',
+  },
+})
+
 const scroll = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
   smooth: true
@@ -73,8 +85,9 @@ const menuPopupEl = document.querySelector('.mobile-menu-popup');
 const menuPopupCloseButtonEl = document.querySelector('.mobile-menu-popup__close');
 const localesSelects = document.querySelectorAll('.select-locales__button');
 const menuLinks = document.querySelectorAll('.main-menu__item');
-const submenuPopup = document.querySelector('.submenu-popup');
-const submenuPopupContainer = document.querySelector('.submenu-popup__container');
+const submenuPopupNetwork = document.querySelector('#submenuNetwork');
+const submenuPopupDeleopers = document.querySelector('#submenuDevelopers');
+const submenuPopupContainers = document.querySelectorAll('.submenu-popup__container');
 
 menuBurgerEl.addEventListener('click', () => {
   menuPopupEl.classList.add('active');
@@ -92,14 +105,19 @@ localesSelects.forEach(el => {
 
 menuLinks.forEach(link => {
   link.addEventListener('mouseover', () => {
-    link.classList.contains('expanded') ? submenuPopup.classList.add('active') : submenuPopup.classList.remove('active');
+    if (link.id === 'developersLink') submenuPopupDeleopers.classList.add('active');
+    if (link.id === 'networkLink') submenuPopupNetwork.classList.add('active');
   })
 })
 
-submenuPopupContainer.addEventListener('mouseover', () => {
-  submenuPopup.classList.add('active');
+submenuPopupContainers.forEach(popup => {
+  popup.addEventListener('mouseover', (event) => {
+    event.target.closest('.submenu-popup').classList.add('active');
+  })
 })
 
-submenuPopupContainer.addEventListener('mouseout', () => {
-  submenuPopup.classList.remove('active');
+submenuPopupContainers.forEach(popup => {
+  popup.addEventListener('mouseout', (event) => {
+    event.target.closest('.submenu-popup').classList.remove('active');
+  })
 })
