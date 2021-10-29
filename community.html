@@ -13,7 +13,7 @@
 <body>
   <div class="container" data-scroll-container>
 
-    <div class="submenu-popup">
+    <div class="submenu-popup" id="submenuNetwork">
       <div class="wrap">
         <div class="submenu-popup__container">
           <div class="submenu-popup__title-block">
@@ -34,22 +34,36 @@
       </div>
     </div>
 
+    <div class="submenu-popup" id="submenuDevelopers">
+      <div class="wrap">
+        <div class="submenu-popup__container">
+          <div class="submenu-popup__title-block">
+            <h2 class="submenu-popup__title secondary-title">Developers</h2>
+          </div>
+          <ul class="submenu-popup__menu">
+            <li class="submenu-popup__menu-item"><a class="external-link" href="">Get started</a></li>
+            <li class="submenu-popup__menu-item"><a class="external-link" href="">Github</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div class="mobile-menu-popup">
-      <a href="">
+      <a href="./index.html">
         <img class="mobile-menu-popup__logo" src="./images/freeton-logo.svg" alt="">
       </a>
       <button class="mobile-menu-popup__close"></button>
       <nav class="mobile-menu">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a href="">Developers</a>
+            <a href="./developers.html">Developers</a>
             <ul class="mobile-menu__sublist">
               <li class="mobile-menu__subitem"><a class="external-link" href="">Get started</a></li>
               <li class="mobile-menu__subitem"><a class="external-link" href="">Github</a></li>
             </ul>
           </li>
-          <li class="mobile-menu__item"><a href="">Ecosystem</a></li>
-          <li class="mobile-menu__item"><a href="">Community</a></li>
+          <li class="mobile-menu__item"><a href="./ecosystem.html">Ecosystem</a></li>
+          <li class="mobile-menu__item"><a href="./ecosystem.html">Community</a></li>
           <li class="mobile-menu__item">
             <a href="">Network</a>
             <ul class="mobile-menu__sublist">
@@ -69,10 +83,10 @@
           </a>
           <nav class="header__menu main-menu">
             <ul>
-              <li><a class="main-menu__item expanded current" href="">Developers</a></li>
-              <li><a class="main-menu__item" href="">Community</a></li>
-              <li><a class="main-menu__item expanded" href="">Network</a></li>
-              <li><a class="main-menu__item" href="">Ecosystem</a></li>
+              <li><a class="main-menu__item expanded" href="developers.html" id="developersLink">Developers</a></li>
+              <li><a class="main-menu__item" href="community.html">Community</a></li>
+              <li><a class="main-menu__item expanded" href="" id="networkLink">Network</a></li>
+              <li><a class="main-menu__item" href="ecosystem.html">Ecosystem</a></li>
             </ul>
           </nav>
           <div class="header__locales select-locales">
