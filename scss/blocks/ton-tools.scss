@@ -59,6 +59,24 @@
       z-index: 8888;
     }
 
+    &-title-block {
+      transform: translateY(76px);
+      transition: all .3s;
+    }
+
+    &:hover &-title-block {
+      transform: translateY(0);
+    }
+
+    &-button {
+      opacity: 0;
+      transition: all .2s;
+    }
+
+    &:hover &-button {
+      opacity: 1;
+    }
+
     &-bg {
       position: absolute;
       left: 0;

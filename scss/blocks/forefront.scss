@@ -34,7 +34,34 @@
 
     &-title {
       width: fit-content;
+      position: relative;
       margin: 0 0 12px;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        border-radius: 9px;
+        background-color: rgba($color: #f3f3f3, $alpha: .05);
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: -62px;
+        top: -18px;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      &_surprize::after {
+        background-image: url('../../images/icons/main/cursor.svg');
+      }
+
+      &_ecosystem::after {
+        background-image: url('../../images/icons/main/lightning.svg');
+      }
     }
 
     p {
