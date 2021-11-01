@@ -109,10 +109,14 @@
     }
 
     &-icon {
-      width: 60px;
+      width: 80px;
+      height: 80px;
+      background-color: #181D4E !important;
+      border-radius: 9px !important;
 
       @media (max-width: 768px) {
         width: 40px;
+        height: 40px;
         margin-bottom: 40px;
       }
     }
@@ -144,7 +148,7 @@
       padding: 0 12px;
       margin: 12px 12px 0 0;
 
-      img {
+      .icon {
         margin-right: 12px;
       }
     }

@@ -82,7 +82,7 @@
       }
     }
 
-    img {
+    .icon {
       position: absolute;
       right: 40px;
       top: 40px;
@@ -133,18 +133,34 @@
 
     &_discord {
       background-color: #7789D4;
+
+      &:hover {
+        background-color: #445BBB;
+      }
     }
 
     &_youtube {
       background-color: #D43929;
+
+      &:hover {
+        background-color: #C02919;
+      }
     }
 
     &_facebook {
       background-color: #3975EA;
+
+      &:hover {
+        background-color: #205DD4;
+      }
     }
 
     &_reddit {
       background-color: #E45127;
+
+      &:hover {
+        background-color: #D8481F;
+      }
     }
 
     &_telegram {
@@ -156,10 +172,6 @@
     text-decoration: none;
     color: white;
     transition: all .2s;
-
-    &:hover {
-      opacity: .5;
-    }
 
     &::after {
       content: '';

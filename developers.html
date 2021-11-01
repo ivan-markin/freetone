@@ -41,14 +41,16 @@
             <h2 class="submenu-popup__title secondary-title">Developers</h2>
           </div>
           <ul class="submenu-popup__menu">
-            <li class="submenu-popup__menu-item"><a class="external-link" href="">Get started</a></li>
-            <li class="submenu-popup__menu-item"><a class="external-link" href="">Github</a></li>
+            <li class="submenu-popup__menu-item"><a class="external-link"
+                href="https://docs.tonalliance.org/developing/developer-guide" target="_blank">Get started</a></li>
+            <li class="submenu-popup__menu-item"><a class="external-link"
+                href="https://github.com/tonlabs/tondev/blob/main/docs/quick_start.md" target="_blank">Github</a></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="mobile-menu-popup">
+    <div class="mobile-menu-popup" data-scroll-section>
       <a href="./index.html">
         <img class="mobile-menu-popup__logo" src="./images/freeton-logo.svg" alt="">
       </a>
@@ -58,8 +60,10 @@
           <li class="mobile-menu__item">
             <a href="./developers.html">Developers</a>
             <ul class="mobile-menu__sublist">
-              <li class="mobile-menu__subitem"><a class="external-link" href="">Get started</a></li>
-              <li class="mobile-menu__subitem"><a class="external-link" href="">Github</a></li>
+              <li class="mobile-menu__subitem"><a class="external-link"
+                  href="https://docs.tonalliance.org/developing/developer-guide" target="_blank">Get started</a></li>
+              <li class="mobile-menu__subitem"><a class="external-link"
+                  href="https://github.com/tonlabs/tondev/blob/main/docs/quick_start.md" target="_blank">Github</a></li>
             </ul>
           </li>
           <li class="mobile-menu__item"><a href="./ecosystem.html">Ecosystem</a></li>
@@ -109,16 +113,25 @@
       <section class="hero-section" data-scroll-section>
         <div class="wrap">
           <div class="hero-section__container">
-            <h1 class="hero-section__title primary-title" data-scroll>
-              Easy entry,<br>
-              great possibilities
-            </h1>
-            <p class="hero-section__description" data-scroll>
-              And take all benefits of decentralization
-            </p>
-            <div class="hero-section__cta" data-scroll>
-              <a class="btn btn_primary" href="">Explore documentation</a>
-              <a class="btn btn_secondary" href="">Build now</a>
+            <div class="hero-section__text-content">
+              <h1 class="hero-section__title primary-title" data-scroll>
+                Easy entry,<br>
+                great possibilities
+              </h1>
+              <p class="hero-section__description" data-scroll>
+                And take all benefits of decentralization
+              </p>
+              <div class="hero-section__cta" data-scroll>
+                <a class="btn btn_primary" href="https://docs.tonalliance.org/developing/developer-guide">Learn
+                  documentation</a>
+                <a class="btn btn_secondary"
+                  href="https://github.com/tonlabs/tondev/blob/main/docs/quick_start.md">Build now</a>
+              </div>
+            </div>
+            <div class="hero-section__bg">
+              <img
+                srcset="./images/Backgrounds/Developers/hero-image.jpg 1x, ./images/Backgrounds/Developers/hero-image@2x.jpg 2x"
+                alt="">
             </div>
           </div>
         </div>
@@ -128,7 +141,9 @@
         <div class="wrap">
           <div class="features-block__container" data-scroll>
             <div class="features-block__item">
-              <img class="features-block__item-icon" src="./images/logo-example.svg" alt="">
+              <div class="features-block__item-icon icon icon_40">
+                <img src="./images/icons/developers/progressive-technology.svg" alt="">
+              </div>
               <h2 class="features-block__item-title block-title">Progressive technology</h2>
               <p class="features-block__item-description block-text">
                 Really working dynamic sharding, Turing-completed smart contracts, near — zero commission and much more.
@@ -136,15 +151,19 @@
               </p>
             </div>
             <div class="features-block__item">
-              <img class="features-block__item-icon" src="./images/logo-example.svg" alt="">
-              <h2 class="features-block__item-title block-title">Expert community</h2>
+              <div class="features-block__item-icon icon icon_40">
+                <img src="./images/icons/developers/active-community.svg" alt="">
+              </div>
+              <h2 class="features-block__item-title block-title">Active community</h2>
               <p class="features-block__item-description block-text">
                 Start developing in Free TON with support from the developer community with a lot of experience in the
                 network!
               </p>
             </div>
             <div class="features-block__item">
-              <img class="features-block__item-icon" src="./images/logo-example.svg" alt="">
+              <div class="features-block__item-icon icon icon_40">
+                <img src="./images/icons/developers/easy-to-entry.svg" alt="">
+              </div>
               <h2 class="features-block__item-title block-title">Easy to entry</h2>
               <p class="features-block__item-description block-text">
                 Learn the developer guide, code examples and start building or integrating your project!
@@ -157,50 +176,67 @@
       <section class="build-integrate" data-scroll-section>
         <div class="wrap">
           <div class="build-integrate__container" data-scroll>
-            <div class="build-integrate__item card">
+            <div class="build-integrate__item build-integrate__item_build card">
               <h2 class="secondary-title card__title">Build</h2>
               <p class="build-integrate__item-description card__description paragraph-text">
                 You can find all information to start building your dapp in the network below:
               </p>
               <div class="buttons-grid">
-                <a class="button-link button-link_wide" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link button-link_wide" href="https://docs.tonalliance.org/developing/developer-guide">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/learn-guide.svg" alt="">
+                  </div>
                   <span>Learn Guide for developers</span>
                 </a>
-                <a class="button-link" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link" href="https://docs.tonalliance.org/developing/testing-environment">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/testing-environment.svg" alt="">
+                  </div>
                   <span>Testing environment</span>
                 </a>
-                <a class="button-link" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link" href="https://docs.tonalliance.org/developing/clients">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/clients.svg" alt="">
+                  </div>
                   <span>Clients</span>
                 </a>
-                <a class="button-link button-link_wide" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link button-link_wide" href="https://github.com/tonlabs/samples">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/examples.svg" alt="">
+                  </div>
                   <span>Examples</span>
                 </a>
               </div>
             </div>
-            <div class="build-integrate__item card">
+            <div class="build-integrate__item build-integrate__item_integrate card">
               <h2 class="secondary-title card__title">Integrate</h2>
               <p class="build-integrate__item-description card__description paragraph-text">
                 You can integrate Free TON into your project or add network tokens to your exchange.
               </p>
               <div class="buttons-grid">
-                <a class="button-link button-link_wide" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link button-link_wide"
+                  href="https://docs.tonalliance.org/integrating/integration-partner-guide">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/add-free-ton.svg" alt="">
+                  </div>
                   <span>Add Free TON to your exchange</span>
                 </a>
-                <a class="button-link" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link" href="https://docs.tonalliance.org/developing/tip-3-tokens">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/tokens.svg" alt="">
+                  </div>
                   <span>TIP-3 tokens</span>
                 </a>
-                <a class="button-link" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link" href="https://docs.tonalliance.org/about/introduction">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/free-ton-overview.svg" alt="">
+                  </div>
                   <span>Free TON Overview</span>
                 </a>
-                <a class="button-link button-link_wide" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link button-link_wide" href="https://docs.tonalliance.org/validating/validator-guide">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/learn-validator-guide.svg" alt="">
+                  </div>
                   <span>Learn the Validator Guide</span>
                 </a>
               </div>
@@ -213,7 +249,7 @@
         <div class="wrap">
           <div class="dev-parameters__container">
             <div class="dev-parameters__item card">
-              <h2 class="card__title secondary-title">124 729</h2>
+              <h2 class="card__title secondary-title">1000+</h2>
               <p class="parameters-caption">Number of developers</p>
             </div>
             <div class="dev-parameters__item card">
@@ -225,7 +261,7 @@
               <p class="parameters-caption">Global Validators</p>
             </div>
             <div class="dev-parameters__item card">
-              <h2 class="card__title secondary-title">16.4 M</h2>
+              <h2 class="card__title secondary-title">300 M</h2>
               <p class="parameters-caption">Foundation holdings</p>
             </div>
           </div>
@@ -237,8 +273,10 @@
           <h2 class="primary-title">TON Tools</h2>
           <div class="ton-tools__container swiper-tools" data-scroll>
             <div class="swiper-wrapper">
-              <div class="ton-tools__item card swiper-slide">
-                <img src="./images/tonos-cli.png" alt="">
+              <div class="ton-tools__item ton-tools__item_cli card swiper-slide">
+                <img
+                  srcset="./images/Backgrounds/Developers/tonos-cli.jpg 1x, ./images/Backgrounds/Developers/tonos-cli@2x.jpg 2x"
+                  alt="">
                 <div>
                   <h2 class="card__title secondary-title">Tonos CLI</h2>
                   <p class="ton-tools__item-description card__description paragraph-text">
@@ -247,12 +285,12 @@
                     from
                     most operating systems
                   </p>
-                  <a class="btn btn_primary" href="">Build now</a>
+                  <a class="btn btn_primary" href="https://github.com/tonlabs/ton-dev-cli">Build now</a>
                 </div>
               </div>
-              <div class="ton-tools__item card swiper-slide">
-                <img src="./images/ton-scan-example-image.svg" alt="">
-                <div>
+              <div class="ton-tools__item ton-tools__item_scan card swiper-slide">
+                <a class="ton-tools__item-link" href="https://tonscan.io/"></a>
+                <div class="ton-tools__item-content">
                   <h2 class="card__title secondary-title">TON Scan</h2>
                   <p class="card__description paragraph-text">
                     Tonos-cli is the main tool for maintaining and setting up accounts and providing access to
@@ -261,6 +299,9 @@
                     most operating systems
                   </p>
                 </div>
+                <img class="ton-tools__item-bg"
+                  srcset="./images/Backgrounds/Developers/ton-scan.jpg, ./images/Backgrounds/Developers/ton-scan@2x.jpg 2x"
+                  alt="">
               </div>
             </div>
             <div class="slider-pagination swiper-pagination swiper-tools-pagination"></div>
@@ -272,85 +313,119 @@
         <div class="wrap">
           <div class="github-docs__container" data-scroll>
             <div class="github-docs__item card">
-              <img class="github-docs__item-icon" src="./images/card-icon-example.svg" alt="">
+              <div class="github-docs__item-icon icon icon_72">
+                <img src="./images/icons/developers/github.svg" alt="">
+              </div>
               <h2 class="card__title secondary-title">Github</h2>
               <p class="github-docs__item-description card__description paragraph-text">
                 Join the developers community, explore all Free TON features and and effectively implement your project.
               </p>
               <div class="buttons-grid">
-                <a class="button-link button-link_wide button-link_ext" href="">
+                <a class="button-link button-link_wide button-link_ext"
+                  href="https://docs.tonalliance.org/validating/validator-guide">
                   <div>
-                    <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                    <div class="button-link__icon icon icon_24">
+                      <img src="./images/icons/developers/validator-node.svg" alt="">
+                    </div>
                     <span>Validator node set up</span>
                   </div>
                 </a>
-                <a class="button-link button-link_wide button-link_ext" href="">
+                <a class="button-link button-link_wide button-link_ext" href="https://github.com/tonlabs/samples">
                   <div>
-                    <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                    <div class="button-link__icon icon icon_24">
+                      <img src="./images/icons/developers/code-samples.svg" alt="">
+                    </div>
                     <span>Code samples</span>
                   </div>
                 </a>
-                <a class="button-link button-link_wide button-link_ext" href="">
+                <a class="button-link button-link_wide button-link_ext" href="https://github.com/tonlabs/TON-SDK">
                   <div>
-                    <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                    <div class="button-link__icon icon icon_24">
+                      <img src="./images/icons/developers/sdk.svg" alt="">
+                    </div>
                     <span>SDK</span>
                   </div>
                 </a>
-                <a class="button-link button-link_wide button-link_ext" href="">
+                <a class="button-link button-link_wide button-link_ext"
+                  href="https://github.com/tonlabs/TON-Solidity-Compiler">
                   <div>
-                    <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                    <div class="button-link__icon icon icon_24">
+                      <img src="./images/icons/developers/ton-solidity.svg" alt="">
+                    </div>
                     <span>TON Solidity Compiler</span>
                   </div>
                 </a>
-                <a class="button-link button-link_wide button-link_ext" href="">
+                <a class="button-link button-link_wide button-link_ext" href="https://github.com/tonlabs/net.ton.dev">
                   <div>
-                    <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                    <div class="button-link__icon icon icon_24">
+                      <img src="./images/icons/developers/test-validator.svg" alt="">
+                    </div>
                     <span>Test validator node</span>
                   </div>
                 </a>
               </div>
             </div>
             <div class="github-docs__item card">
-              <img class="github-docs__item-icon" src="./images/card-icon-example.svg" alt="">
+              <div class="github-docs__item-icon icon icon_72">
+                <img src="./images/icons/developers/docs.svg" alt="">
+              </div>
               <h2 class="card__title secondary-title">Docs</h2>
               <p class="github-docs__item-description card__description paragraph-text">
                 Find all the information on the network in our documentation.
               </p>
               <div class="buttons-grid">
-                <a class="button-link" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link" href="https://docs.tonalliance.org/developing/developer-guide">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/guide-for-developers.svg" alt="">
+                  </div>
                   <span>Guide for developers</span>
                 </a>
-                <a class="button-link" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link" href="https://docs.tonalliance.org/integrating/integration-partner-guide">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/guide-for-integrators.svg" alt="">
+                  </div>
                   <span>Guide for integrators</span>
                 </a>
-                <a class="button-link button-link_wide" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link button-link_wide" href="https://docs.tonalliance.org/about/introduction">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/free-ton-overview.svg" alt="">
+                  </div>
                   <span>Free TON Overview</span>
                 </a>
-                <a class="button-link" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link" href="https://docs.tonalliance.org/validating/validator-guide">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/guide-for-validators.svg" alt="">
+                  </div>
                   <span>Guide for validators</span>
                 </a>
-                <a class="button-link" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link" href="https://docs.tonalliance.org/about/roadmap">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/roadmap.svg" alt="">
+                  </div>
                   <span>Roadmap</span>
                 </a>
-                <a class="button-link" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link" href="https://defi.gov.freeton.org/main">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/dev-contests.svg" alt="">
+                  </div>
                   <span>Dev Contests</span>
                 </a>
-                <a class="button-link" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link" href="https://docs.tonalliance.org/developing/ton-virtual-machine">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/tvm.svg" alt="">
+                  </div>
                   <span>TVM</span>
                 </a>
-                <a class="button-link" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link" href="https://docs.tonalliance.org/developing/faq">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/faq.svg" alt="">
+                  </div>
                   <span>FAQ</span>
                 </a>
-                <a class="button-link" href="">
-                  <img class="button-link__icon" src="./images/button-icon-example.svg" alt="">
+                <a class="button-link" href="https://docs.tonalliance.org/stake">
+                  <div class="button-link__icon icon icon_24">
+                    <img src="./images/icons/developers/staking.svg" alt="">
+                  </div>
                   <span>Staking</span>
                 </a>
               </div>
@@ -442,39 +517,39 @@
               <div class="ecosystem__blocks" data-scroll data-scroll-direction="horizontal" data-scroll-speed="4">
                 <div class="ecosystem__block-spacer ecosystem__block-spacer_225"></div>
                 <a class="ecosystem__block" href="https://t.me/freetondevru" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
+                  <img class="ecosystem__block-logo" src="./images/icons/developers/ru-chat.png" alt="">
                   <span class="ecosystem__block-title">RU_Developers_Chat</span>
                 </a>
                 <a class="ecosystem__block" href="https://t.me/freetondev_ru" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
+                  <img class="ecosystem__block-logo" src="./images/icons/developers/ru-chat.png" alt="">
                   <span class="ecosystem__block-title">RU_Developers_Channel</span>
                 </a>
                 <a class="ecosystem__block" href="https://t.me/ton_sdk" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
+                  <img class="ecosystem__block-logo" src="./images/icons/developers/sdk-chat.png" alt="">
                   <span class="ecosystem__block-title">EN_SDK_Chat</span>
                 </a>
                 <div class="ecosystem__block-spacer ecosystem__block-spacer_374"></div>
                 <div class="ecosystem__block-spacer ecosystem__block-spacer_374"></div>
                 <a class="ecosystem__block" href="https://t.me/tondev_en" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
+                  <img class="ecosystem__block-logo" src="./images/icons/developers/en-chat.png" alt="">
                   <span class="ecosystem__block-title">EN_Developers_Chat</span>
                 </a>
                 <div class="ecosystem__block-spacer ecosystem__block-spacer_225"></div>
                 <a class="ecosystem__block" href="https://t.me/TON_DEV" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
+                  <img class="ecosystem__block-logo" src="./images/icons/developers/en-chat.png" alt="">
                   <span class="ecosystem__block-title">EN_Developers_Channel</span>
                 </a>
                 <a class="ecosystem__block" href="https://t.me/Tonlabs" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
+                  <img class="ecosystem__block-logo" src="./images/icons/developers/tonlabs.png" alt="">
                   <span class="ecosystem__block-title">EN_TONLabs_Info_Channel</span>
                 </a>
                 <a class="ecosystem__block" href="https://t.me/ton_validators_ru" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
+                  <img class="ecosystem__block-logo" src="./images/icons/developers/ru-chat.png" alt="">
                   <span class="ecosystem__block-title">RU_Validators_Chat</span>
                 </a>
                 <div class="ecosystem__block-spacer ecosystem__block-spacer_225"></div>
                 <a class="ecosystem__block" href="https://t.me/freetonvalidators" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
+                  <img class="ecosystem__block-logo" src="./images/icons/developers/en-chat.png" alt="">
                   <span class="ecosystem__block-title">EN_Validators_Chat</span>
                 </a>
               </div>
@@ -487,7 +562,7 @@
 
     <footer class="footer" data-scroll-section>
       <div class="wrap">
-        <div class="footer__container" data-scroll>
+        <div class="footer__container">
           <div class="footer__copyrights">
             <a href=""><img class="footer__logo" src="./images/freeton-logo.svg" alt=""></a>
             <p>
@@ -507,36 +582,41 @@
             <div class="footer__menu-section">
               <h3>Build</h3>
               <ul>
-                <li><a href="">Docs</a></li>
-                <li><a href="">GitHub</a></li>
-                <li><a href="">Chat on Discord</a></li>
-                <li><a href="">Status</a></li>
+                <li><a href="">Developer Guide</a></li>
+                <li><a href="">TVM</a></li>
+                <li><a href="">Smart Contracts</a></li>
+                <li><a href="">Code Samples</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Join Community</a></li>
               </ul>
             </div>
             <div class="footer__menu-section">
-              <h3>Apply</h3>
+              <h3>Explore</h3>
               <ul>
-                <li><a href="">Grants</a></li>
-                <li><a href="">Collective</a></li>
-                <li><a href="">Careers</a></li>
+                <li><a href="">Individual Guide</a></li>
+                <li><a href="">Institutional Guide</a></li>
+                <li><a href="">Contributor Guide</a></li>
+                <li><a href="">Bridge</a></li>
+                <li><a href="">Farming&NFT</a></li>
+                <li><a href="">Join Community</a></li>
               </ul>
             </div>
             <div class="footer__menu-section">
-              <h3>Learn</h3>
+              <h3>Validate</h3>
               <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Podcast</a></li>
-                <li><a href="">Videos</a></li>
-                <li><a href="">Network Stats</a></li>
+                <li><a href="">Validator Guide</a></li>
+                <li><a href="">DePools Guide</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Join Community</a></li>
               </ul>
             </div>
             <div class="footer__menu-section">
-              <h3>Other</h3>
+              <h3>Integrate</h3>
               <ul>
-                <li><a href="">Break FreeTON</a></li>
-                <li><a href="">Disclaimer</a></li>
-                <li><a href="">Press & Brand</a></li>
+                <li><a href="">Integration Partner Guide</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Community Assistance</a></li>
               </ul>
             </div>
           </nav>

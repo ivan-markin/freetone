@@ -1,0 +1,33 @@
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_80 {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+    background-color: rgba($color: #fff, $alpha: .2);
+  }
+
+  &_72 {
+    width: 72px;
+    height: 72px;
+    border-radius: 9px;
+    background-color: rgba($color: #f3f3f3, $alpha: .05);
+  }
+
+  &_40 {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgba($color: #ccc, $alpha: .1);
+  }
+
+  &_24 {
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    background-color: rgba($color: #f3f3f3, $alpha: .05);
+  }
+}

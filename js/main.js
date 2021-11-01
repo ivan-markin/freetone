@@ -84,10 +84,44 @@ const menuBurgerEl = document.querySelector('.menu-burger');
 const menuPopupEl = document.querySelector('.mobile-menu-popup');
 const menuPopupCloseButtonEl = document.querySelector('.mobile-menu-popup__close');
 const localesSelects = document.querySelectorAll('.select-locales__button');
+const localesElements = document.querySelectorAll('.select-locales');
 const menuLinks = document.querySelectorAll('.main-menu__item');
 const submenuPopupNetwork = document.querySelector('#submenuNetwork');
 const submenuPopupDeleopers = document.querySelector('#submenuDevelopers');
 const submenuPopupContainers = document.querySelectorAll('.submenu-popup__container');
+const submenuPopupElements = document.querySelectorAll('.submenu-popup');
+
+function openLocalesSelect(event) {
+  event.target.closest('.select-locales').classList.toggle('active');
+  // setTimeout(() => {
+  //   document.addEventListener('click', (event) => {
+  //     if (!event.target.classList.contains('select-locales__list')) {
+  //       collapseLocalesSelect(event);
+  //     }
+  //   });
+  //   document.addEventListener('keydown', (event) => {
+  //     if (event.code == 'Escape') {
+  //       collapseLocalesSelect(event);
+  //     }
+  //   })
+  // }, 0);
+}
+
+function collapseLocalesSelect(event) {
+  localesElements.forEach(el => {
+    el.classList.remove('active');
+  })
+  document.removeEventListener('click', (event) => {
+    if (!event.target.classList.contains('select-locales__list')) {
+      collapseLocalesSelect(event);
+    }
+  });
+  document.removeEventListener('keydown', (event) => {
+    if (event.code == 'Escape') {
+      collapseLocalesSelect(event);
+    }
+  })
+}
 
 menuBurgerEl.addEventListener('click', () => {
   menuPopupEl.classList.add('active');
@@ -98,15 +132,22 @@ menuPopupCloseButtonEl.addEventListener('click', () => {
 })
 
 localesSelects.forEach(el => {
-  el.addEventListener('click', () => {
-    el.closest('.select-locales').classList.toggle('active');
-  })
+  el.addEventListener('click', openLocalesSelect);
 })
 
 menuLinks.forEach(link => {
   link.addEventListener('mouseover', () => {
-    if (link.id === 'developersLink') submenuPopupDeleopers.classList.add('active');
-    if (link.id === 'networkLink') submenuPopupNetwork.classList.add('active');
+    submenuPopupElements.forEach(el => {
+      el.classList.remove('active');
+    })
+    switch (link.id) {
+      case 'developersLink':
+        submenuPopupDeleopers.classList.add('active');
+        break;
+      case 'networkLink':
+        submenuPopupNetwork.classList.add('active');
+        break;
+    }
   })
 })
 
@@ -119,5 +160,11 @@ submenuPopupContainers.forEach(popup => {
 submenuPopupContainers.forEach(popup => {
   popup.addEventListener('mouseout', (event) => {
     event.target.closest('.submenu-popup').classList.remove('active');
+  })
+})
+
+document.addEventListener('scroll', () => {
+  submenuPopupElements.forEach(el => {
+    el.classList.remove('active');
   })
 })

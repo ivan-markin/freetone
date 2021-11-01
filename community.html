@@ -41,14 +41,16 @@
             <h2 class="submenu-popup__title secondary-title">Developers</h2>
           </div>
           <ul class="submenu-popup__menu">
-            <li class="submenu-popup__menu-item"><a class="external-link" href="">Get started</a></li>
-            <li class="submenu-popup__menu-item"><a class="external-link" href="">Github</a></li>
+            <li class="submenu-popup__menu-item"><a class="external-link"
+                href="https://docs.tonalliance.org/developing/developer-guide" target="_blank">Get started</a></li>
+            <li class="submenu-popup__menu-item"><a class="external-link"
+                href="https://github.com/tonlabs/tondev/blob/main/docs/quick_start.md" target="_blank">Github</a></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="mobile-menu-popup">
+    <div class="mobile-menu-popup" data-scroll-section>
       <a href="./index.html">
         <img class="mobile-menu-popup__logo" src="./images/freeton-logo.svg" alt="">
       </a>
@@ -58,8 +60,10 @@
           <li class="mobile-menu__item">
             <a href="./developers.html">Developers</a>
             <ul class="mobile-menu__sublist">
-              <li class="mobile-menu__subitem"><a class="external-link" href="">Get started</a></li>
-              <li class="mobile-menu__subitem"><a class="external-link" href="">Github</a></li>
+              <li class="mobile-menu__subitem"><a class="external-link"
+                  href="https://docs.tonalliance.org/developing/developer-guide" target="_blank">Get started</a></li>
+              <li class="mobile-menu__subitem"><a class="external-link"
+                  href="https://github.com/tonlabs/tondev/blob/main/docs/quick_start.md" target="_blank">Github</a></li>
             </ul>
           </li>
           <li class="mobile-menu__item"><a href="./ecosystem.html">Ecosystem</a></li>
@@ -109,13 +113,20 @@
       <section class="hero-section" data-scroll-section>
         <div class="wrap">
           <div class="hero-section__container">
-            <h1 class="hero-section__title primary-title" data-scroll>
-              Talk, learn,<br>
-              govern & earn
-            </h1>
-            <p class="hero-section__description" data-scroll>
-              With the most progressive people creating the future
-            </p>
+            <div class="hero-section__text-content">
+              <h1 class="hero-section__title primary-title" data-scroll>
+                Talk, learn,<br>
+                govern & earn
+              </h1>
+              <p class="hero-section__description" data-scroll>
+                With the most progressive people creating the future
+              </p>
+            </div>
+            <div class="hero-section__bg">
+              <img
+                srcset="./images/Backgrounds/Community/hero-image.jpg 1x, ./images/Backgrounds/Community/hero-image@2x.jpg 2x"
+                alt="">
+            </div>
           </div>
         </div>
       </section>
@@ -163,25 +174,33 @@
         <div class="wrap">
           <div class="community__container" data-scroll>
             <div class="community__item community__item_discord">
-              <img src="./images/comminity-example-logo.svg" alt="">
+              <div class="icon icon_80">
+                <img src="./images/icons/community/discord.svg" alt="">
+              </div>
               <h3 class="community__item-title block-title">
                 <a class="community__block-link" href="">Discord</a>
               </h3>
             </div>
             <div class="community__item community__item_youtube">
-              <img src="./images/comminity-example-logo.svg" alt="">
+              <div class="icon icon_80">
+                <img src="./images/icons/community/youtube.svg" alt="">
+              </div>
               <h3 class="community__item-title block-title">
                 <a class="community__block-link" href="">Youtube</a>
               </h3>
             </div>
             <div class="community__item community__item_facebook">
-              <img src="./images/comminity-example-logo.svg" alt="">
+              <div class="icon icon_80">
+                <img src="./images/icons/community/facebook.svg" alt="">
+              </div>
               <h3 class="community__item-title block-title">
                 <a class="community__block-link" href="">Facebook</a>
               </h3>
             </div>
             <div class="community__item community__item_reddit">
-              <img src="./images/comminity-example-logo.svg" alt="">
+              <div class="icon icon_80">
+                <img src="./images/icons/community/reddit.svg" alt="">
+              </div>
               <h3 class="community__item-title block-title">
                 <a class="community__block-link" href="">Reddit</a>
               </h3>
@@ -224,7 +243,9 @@
                 </ul>
               </div>
               <div class="community__item-column">
-                <img src="./images/comminity-example-logo.svg" alt="">
+                <div class="icon icon_80">
+                  <img src="./images/icons/community/telegram.svg" alt="">
+                </div>
                 <h3 class="community__item-title block-title">Telegram</h3>
               </div>
             </div>
@@ -280,216 +301,280 @@
           </div> -->
           <div class="cards-gallery__cards">
             <div class="cards-gallery__card">
-              <img class="cards-gallery__card-icon" src="./images/comminity-example-logo.svg" alt="">
+              <div class="cards-gallery__card-icon icon icon_80">
+                <img src="./images/icons/community/analytics.svg" alt="">
+              </div>
               <div>
                 <div class="cards-gallery__card-title-block">
                   <h3 class="cards-gallery__card-title block-title">
                     <a class="cards-gallery__card-link" href="">Analytics & Support</a>
                   </h3>
                   <p class="cards-gallery__card-description block-text">
-                    Free TON is a decentralized blockchain built to enable scalable, user-friendly
+                    Insights and explanations — give or get them
                   </p>
                 </div>
                 <div class="cards-gallery__card-tags">
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/contests.svg" alt="">
+                    </div>
                     <span>Contests & Proposals</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Telegram</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Forum</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="cards-gallery__card">
-              <img class="cards-gallery__card-icon" src="./images/comminity-example-logo.svg" alt="">
+              <div class="cards-gallery__card-icon icon icon_80">
+                <img src="./images/icons/community/community-voice.svg" alt="">
+              </div>
               <div>
                 <div class="cards-gallery__card-title-block">
                   <h3 class="cards-gallery__card-title block-title">
-                    <a class="cards-gallery__card-link" href="">Analytics & Support</a>
+                    <a class="cards-gallery__card-link" href="">Community Voice</a>
                   </h3>
                   <p class="cards-gallery__card-description block-text">
-                    Free TON is a decentralized blockchain built to enable scalable, user-friendly
+                    Managers, moderators, organizers, authors, translators…
                   </p>
                 </div>
                 <div class="cards-gallery__card-tags">
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/contests.svg" alt="">
+                    </div>
                     <span>Contests & Proposals</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Telegram</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Forum</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="cards-gallery__card">
-              <img class="cards-gallery__card-icon" src="./images/comminity-example-logo.svg" alt="">
+              <div class="cards-gallery__card-icon icon icon_80">
+                <img src="./images/icons/community/defi.svg" alt="">
+              </div>
               <div>
                 <div class="cards-gallery__card-title-block">
                   <h3 class="cards-gallery__card-title block-title">
-                    <a class="cards-gallery__card-link" href="">Analytics & Support</a>
+                    <a class="cards-gallery__card-link" href="">DeFi</a>
                   </h3>
                   <p class="cards-gallery__card-description block-text">
-                    Free TON is a decentralized blockchain built to enable scalable, user-friendly
+                    Tell banks to take a hike with free and open finance
                   </p>
                 </div>
                 <div class="cards-gallery__card-tags">
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/contests.svg" alt="">
+                    </div>
                     <span>Contests & Proposals</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Telegram</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Forum</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="cards-gallery__card">
-              <img class="cards-gallery__card-icon" src="./images/comminity-example-logo.svg" alt="">
+              <div class="cards-gallery__card-icon icon icon_80">
+                <img src="./images/icons/community/devops.svg" alt="">
+              </div>
               <div>
                 <div class="cards-gallery__card-title-block">
                   <h3 class="cards-gallery__card-title block-title">
-                    <a class="cards-gallery__card-link" href="">Analytics & Support</a>
+                    <a class="cards-gallery__card-link" href="">DevOps</a>
                   </h3>
                   <p class="cards-gallery__card-description block-text">
-                    Free TON is a decentralized blockchain built to enable scalable, user-friendly
+                    Open-source resources to learn, build, improve, and share
                   </p>
                 </div>
                 <div class="cards-gallery__card-tags">
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/contests.svg" alt="">
+                    </div>
                     <span>Contests & Proposals</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Telegram</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Forum</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="cards-gallery__card">
-              <img class="cards-gallery__card-icon" src="./images/comminity-example-logo.svg" alt="">
+              <div class="cards-gallery__card-icon icon icon_80">
+                <img src="./images/icons/community/dgo.svg" alt="">
+              </div>
               <div>
                 <div class="cards-gallery__card-title-block">
                   <h3 class="cards-gallery__card-title block-title">
-                    <a class="cards-gallery__card-link" href="">Analytics & Support</a>
+                    <a class="cards-gallery__card-link" href="">DGO</a>
                   </h3>
                   <p class="cards-gallery__card-description block-text">
-                    Free TON is a decentralized blockchain built to enable scalable, user-friendly
+                    That is, Decentralized Governance Organization
                   </p>
                 </div>
                 <div class="cards-gallery__card-tags">
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/contests.svg" alt="">
+                    </div>
                     <span>Contests & Proposals</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Telegram</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Forum</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="cards-gallery__card">
-              <img class="cards-gallery__card-icon" src="./images/comminity-example-logo.svg" alt="">
+              <div class="cards-gallery__card-icon icon icon_80">
+                <img src="./images/icons/community/esports.svg" alt="">
+              </div>
               <div>
                 <div class="cards-gallery__card-title-block">
                   <h3 class="cards-gallery__card-title block-title">
-                    <a class="cards-gallery__card-link" href="">Analytics & Support</a>
+                    <a class="cards-gallery__card-link" href="">Free TON eSports</a>
                   </h3>
                   <p class="cards-gallery__card-description block-text">
-                    Free TON is a decentralized blockchain built to enable scalable, user-friendly
+                    Use FT to drive the cybersport industry
                   </p>
                 </div>
                 <div class="cards-gallery__card-tags">
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/contests.svg" alt="">
+                    </div>
                     <span>Contests & Proposals</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Telegram</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Forum</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="cards-gallery__card">
-              <img class="cards-gallery__card-icon" src="./images/comminity-example-logo.svg" alt="">
+              <div class="cards-gallery__card-icon icon icon_80">
+                <img src="./images/icons/community/smm.svg" alt="">
+              </div>
               <div>
                 <div class="cards-gallery__card-title-block">
                   <h3 class="cards-gallery__card-title block-title">
-                    <a class="cards-gallery__card-link" href="">Analytics & Support</a>
+                    <a class="cards-gallery__card-link" href="">SMM</a>
                   </h3>
                   <p class="cards-gallery__card-description block-text">
-                    Free TON is a decentralized blockchain built to enable scalable, user-friendly
+                    Help to spread the word of freedom
                   </p>
                 </div>
                 <div class="cards-gallery__card-tags">
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/contests.svg" alt="">
+                    </div>
                     <span>Contests & Proposals</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Telegram</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Forum</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="cards-gallery__card">
-              <img class="cards-gallery__card-icon" src="./images/comminity-example-logo.svg" alt="">
+              <div class="cards-gallery__card-icon icon icon_80">
+                <img src="./images/icons/community/web-design.svg" alt="">
+              </div>
               <div>
                 <div class="cards-gallery__card-title-block">
                   <h3 class="cards-gallery__card-title block-title">
-                    <a class="cards-gallery__card-link" href="">Analytics & Support</a>
+                    <a class="cards-gallery__card-link" href="">Web & Design</a>
                   </h3>
                   <p class="cards-gallery__card-description block-text">
-                    Free TON is a decentralized blockchain built to enable scalable, user-friendly
+                    Shaping the visual identity of the project
                   </p>
                 </div>
                 <div class="cards-gallery__card-tags">
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/contests.svg" alt="">
+                    </div>
                     <span>Contests & Proposals</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Telegram</span>
                   </div>
                   <div class="cards-gallery__card-tag">
-                    <img src="./images/button-icon-example.svg" alt="">
+                    <div class="icon icon_24">
+                      <img src="./images/icons/community/telegram-small.svg" alt="">
+                    </div>
                     <span>Forum</span>
                   </div>
                 </div>
@@ -499,16 +584,18 @@
         </div>
       </section>
 
-      <section class="banner-section" data-scroll-section>
+      <section class="banner-section banner-section_community" data-scroll-section>
         <div class="wrap">
           <div class="banner-section__container">
             <div class="banner-section__title-block">
-              <h2 class="banner-section__title block-title">Submit your product</h2>
-              <p class="banner-section__description block-text">There's something for everybody. Follow along, chat on
-                Discord, or read up
-                on what we’re doing.</p>
-              <a class="banner-section__button btn btn_primary" href="">Join ecosystem</a>
+              <h2 class="banner-section__title block-title">S-s-scalable… Meh?</h2>
+              <p class="banner-section__description block-text">Cheap & scalable they all are (-; Well, feel free to
+                DDOS FT — type anything & watch the transaction</p>
+              <a class="banner-section__button btn btn_primary" href="">DDOS it!</a>
             </div>
+            <img class="banner-section__bg"
+              srcset="./images/Backgrounds/Community/banner-image.jpg 1x, ./images/Backgrounds/Community/banner-image@2x.jpg 2x"
+              alt="">
           </div>
         </div>
       </section>
@@ -516,7 +603,7 @@
 
     <footer class="footer" data-scroll-section>
       <div class="wrap">
-        <div class="footer__container" data-scroll>
+        <div class="footer__container">
           <div class="footer__copyrights">
             <a href=""><img class="footer__logo" src="./images/freeton-logo.svg" alt=""></a>
             <p>
@@ -536,36 +623,41 @@
             <div class="footer__menu-section">
               <h3>Build</h3>
               <ul>
-                <li><a href="">Docs</a></li>
-                <li><a href="">GitHub</a></li>
-                <li><a href="">Chat on Discord</a></li>
-                <li><a href="">Status</a></li>
+                <li><a href="">Developer Guide</a></li>
+                <li><a href="">TVM</a></li>
+                <li><a href="">Smart Contracts</a></li>
+                <li><a href="">Code Samples</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Join Community</a></li>
               </ul>
             </div>
             <div class="footer__menu-section">
-              <h3>Apply</h3>
+              <h3>Explore</h3>
               <ul>
-                <li><a href="">Grants</a></li>
-                <li><a href="">Collective</a></li>
-                <li><a href="">Careers</a></li>
+                <li><a href="">Individual Guide</a></li>
+                <li><a href="">Institutional Guide</a></li>
+                <li><a href="">Contributor Guide</a></li>
+                <li><a href="">Bridge</a></li>
+                <li><a href="">Farming&NFT</a></li>
+                <li><a href="">Join Community</a></li>
               </ul>
             </div>
             <div class="footer__menu-section">
-              <h3>Learn</h3>
+              <h3>Validate</h3>
               <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Podcast</a></li>
-                <li><a href="">Videos</a></li>
-                <li><a href="">Network Stats</a></li>
+                <li><a href="">Validator Guide</a></li>
+                <li><a href="">DePools Guide</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Join Community</a></li>
               </ul>
             </div>
             <div class="footer__menu-section">
-              <h3>Other</h3>
+              <h3>Integrate</h3>
               <ul>
-                <li><a href="">Break FreeTON</a></li>
-                <li><a href="">Disclaimer</a></li>
-                <li><a href="">Press & Brand</a></li>
+                <li><a href="">Integration Partner Guide</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Community Assistance</a></li>
               </ul>
             </div>
           </nav>

@@ -41,14 +41,16 @@
             <h2 class="submenu-popup__title secondary-title">Developers</h2>
           </div>
           <ul class="submenu-popup__menu">
-            <li class="submenu-popup__menu-item"><a class="external-link" href="">Get started</a></li>
-            <li class="submenu-popup__menu-item"><a class="external-link" href="">Github</a></li>
+            <li class="submenu-popup__menu-item"><a class="external-link"
+                href="https://docs.tonalliance.org/developing/developer-guide" target="_blank">Get started</a></li>
+            <li class="submenu-popup__menu-item"><a class="external-link"
+                href="https://github.com/tonlabs/tondev/blob/main/docs/quick_start.md" target="_blank">Github</a></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="mobile-menu-popup">
+    <div class="mobile-menu-popup" data-scroll-section>
       <a href="./index.html">
         <img class="mobile-menu-popup__logo" src="./images/freeton-logo.svg" alt="">
       </a>
@@ -58,8 +60,10 @@
           <li class="mobile-menu__item">
             <a href="./developers.html">Developers</a>
             <ul class="mobile-menu__sublist">
-              <li class="mobile-menu__subitem"><a class="external-link" href="">Get started</a></li>
-              <li class="mobile-menu__subitem"><a class="external-link" href="">Github</a></li>
+              <li class="mobile-menu__subitem"><a class="external-link"
+                  href="https://docs.tonalliance.org/developing/developer-guide" target="_blank">Get started</a></li>
+              <li class="mobile-menu__subitem"><a class="external-link"
+                  href="https://github.com/tonlabs/tondev/blob/main/docs/quick_start.md" target="_blank">Github</a></li>
             </ul>
           </li>
           <li class="mobile-menu__item"><a href="./ecosystem.html">Ecosystem</a></li>
@@ -119,13 +123,14 @@
                 and see.
               </p>
               <div class="hero-section__cta" data-scroll>
-                <a class="btn btn_primary" href="">Go building</a>
-                <a class="btn btn_secondary" href="">Check documentation</a>
+                <a class="btn btn_primary" href="https://docs.tonalliance.org/developing/developer-guide">Start
+                  building</a>
+                <a class="btn btn_secondary" href="https://docs.tonalliance.org/">Learn documentation</a>
               </div>
             </div>
-            <div class="hero-section__bg">
+            <!-- <div class="hero-section__bg">
               <video src="./images/main-hero.mp4" loop autoplay muted></video>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -197,24 +202,41 @@
         <div class="wrap">
           <div class="gallery__container" data-scroll-section>
             <div class="gallery__item gallery__item_large">
-              <h2 class="gallery__item-title secondary-title" data-scroll>Freeton is</h2>
-              <p data-scroll>
-                Fast, secure, scalable. Handling millions of transactions per second since 2018. A huge distributed
-                supercomputer or
-                rather "super server" that hosts and provides a variety of services
-              </p>
+              <a class="gallery__item-link" href="https://docs.tonalliance.org/about/introduction"></a>
+              <div class="gallery__item-content">
+                <h2 class="gallery__item-title secondary-title" data-scroll>
+                  Everscale is
+                </h2>
+                <p data-scroll>
+                  Fast, secure, scalable. Handling millions of transactions per second since 2018. A huge distributed
+                  supercomputer or
+                  rather "super server" that hosts and provides a variety of services
+                </p>
+              </div>
+              <img class="gallery__item-image" srcset="./images/Backgrounds/Main/freeton-is.jpg 1x,
+                        ./images/Backgrounds/Main/freeton-is@2x.jpg 2x" alt="">
             </div>
             <div class="gallery__item">
-              <h2 class="gallery__item-title secondary-title" data-scroll>TON bridge</h2>
-              <p data-scroll>
-                The gate to DeFi
-              </p>
+              <a class="gallery__item-link" href="https://v2.tonbridge.io/bridge"></a>
+              <div class="gallery__item-content">
+                <h2 class="gallery__item-title secondary-title" data-scroll>TON Bridge</h2>
+                <p data-scroll>
+                  The gate to DeFi
+                </p>
+              </div>
+              <img class="gallery__item-image" srcset="./images/Backgrounds/Main/ton-bridge.jpg 1x,
+                                      ./images/Backgrounds/Main/ton-bridge@2x.jpg 2x" alt="">
             </div>
             <div class="gallery__item">
-              <h2 class="gallery__item-title secondary-title">TON swap</h2>
-              <p>
-                The infinite sharding mechanism makes it almost 200 times cheaper than some other DEXes
-              </p>
+              <a class="gallery__item-link" href="https://tutorial.tonswap.io/"></a>
+              <div class="gallery__item-content">
+                <h2 class="gallery__item-title secondary-title">TON Swap</h2>
+                <p>
+                  The infinite sharding mechanism makes it almost 200 times cheaper than some other DEXes
+                </p>
+              </div>
+              <img class="gallery__item-image" srcset="./images/Backgrounds/Main/ton-swap.jpg 1x,
+                                                    ./images/Backgrounds/Main/ton-swap@2x.jpg 2x" alt="">
             </div>
           </div>
         </div>
@@ -225,46 +247,88 @@
           <div class="ecosystem__container">
             <div class="ecosystem__blocks-container">
               <div class="ecosystem__blocks" data-scroll data-scroll-direction="horizontal" data-scroll-speed="4">
-                <div class="ecosystem__block-spacer ecosystem__block-spacer_225"></div>
                 <a class="ecosystem__block" href="https://t.me/freetondevru" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">RU_Developers_Chat</span>
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Wallets/Combot.png" alt="">
+                  <span class="ecosystem__block-title">Combot</span>
                 </a>
                 <a class="ecosystem__block" href="https://t.me/freetondev_ru" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">RU_Developers_Channel</span>
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Wallets/Koshelek.ru.png" alt="">
+                  <span class="ecosystem__block-title">Koshelek.ru</span>
                 </a>
                 <a class="ecosystem__block" href="https://t.me/ton_sdk" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">EN_SDK_Chat</span>
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Wallets/Crypterium.png" alt="">
+                  <span class="ecosystem__block-title">Crypterium</span>
                 </a>
-                <div class="ecosystem__block-spacer ecosystem__block-spacer_374"></div>
-                <div class="ecosystem__block-spacer ecosystem__block-spacer_374"></div>
                 <a class="ecosystem__block" href="https://t.me/tondev_en" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">EN_Developers_Chat</span>
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Wallets/KiloX Wallet.png" alt="">
+                  <span class="ecosystem__block-title">KiloX Wallet</span>
                 </a>
-                <div class="ecosystem__block-spacer ecosystem__block-spacer_225"></div>
                 <a class="ecosystem__block" href="https://t.me/TON_DEV" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">EN_Developers_Channel</span>
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Wallets/TonWallet.png" alt="">
+                  <span class="ecosystem__block-title">Ton Wallet</span>
                 </a>
                 <a class="ecosystem__block" href="https://t.me/Tonlabs" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">EN_TONLabs_Info_Channel</span>
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Wallets/ExtraTON.png" alt="">
+                  <span class="ecosystem__block-title">extraTON</span>
                 </a>
                 <a class="ecosystem__block" href="https://t.me/ton_validators_ru" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">RU_Validators_Chat</span>
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Wallets/FreeWallet.png" alt="">
+                  <span class="ecosystem__block-title">FreeWallet</span>
                 </a>
-                <div class="ecosystem__block-spacer ecosystem__block-spacer_225"></div>
                 <a class="ecosystem__block" href="https://t.me/freetonvalidators" target="_blank">
-                  <span class="ecosystem__block-logo"></span>
-                  <span class="ecosystem__block-title">EN_Validators_Chat</span>
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Wallets/Lumi Wallet.png" alt="">
+                  <span class="ecosystem__block-title">Lumi Wallet</span>
+                </a>
+                <div class="ecosystem__block-spacer ecosystem__block-spacer_650"></div>
+                <a class="ecosystem__block" href="https://t.me/freetonvalidators" target="_blank">
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Exchanges/Bitcoin.png" alt="">
+                  <span class="ecosystem__block-title">Bitcoin.com</span>
+                </a>
+                <a class="ecosystem__block" href="https://t.me/freetonvalidators" target="_blank">
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Exchanges/Kuna.png" alt="">
+                  <span class="ecosystem__block-title">Kuna Exchange</span>
+                </a>
+                <a class="ecosystem__block" href="https://t.me/freetonvalidators" target="_blank">
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Exchanges/CEX.png" alt="">
+                  <span class="ecosystem__block-title">CEX</span>
+                </a>
+                <a class="ecosystem__block" href="https://t.me/freetonvalidators" target="_blank">
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Exchanges/Changelly-Pro.png"
+                    alt="">
+                  <span class="ecosystem__block-title">Changelly Pro</span>
+                </a>
+                <a class="ecosystem__block" href="https://t.me/freetonvalidators" target="_blank">
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Exchanges/Chatex.png" alt="">
+                  <span class="ecosystem__block-title">Chatex</span>
+                </a>
+                <a class="ecosystem__block" href="https://t.me/freetonvalidators" target="_blank">
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Exchanges/HitBTC.png" alt="">
+                  <span class="ecosystem__block-title">HitBTC</span>
+                </a>
+                <a class="ecosystem__block" href="https://t.me/freetonvalidators" target="_blank">
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Exchanges/MEXC-Global.png"
+                    alt="">
+                  <span class="ecosystem__block-title">MEXC Global</span>
+                </a>
+                <a class="ecosystem__block" href="https://t.me/freetonvalidators" target="_blank">
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Exchanges/Crypterium.png" alt="">
+                  <span class="ecosystem__block-title">Crypterium</span>
+                </a>
+                <a class="ecosystem__block" href="https://t.me/freetonvalidators" target="_blank">
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Exchanges/Uniswap.png" alt="">
+                  <span class="ecosystem__block-title">Uniswap</span>
+                </a>
+                <a class="ecosystem__block" href="https://t.me/freetonvalidators" target="_blank">
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Exchanges/Coineal.png" alt="">
+                  <span class="ecosystem__block-title">Coineal</span>
+                </a>
+                <a class="ecosystem__block" href="https://t.me/freetonvalidators" target="_blank">
+                  <img class="ecosystem__block-logo" src="./images/png/Logos/Ecosystem/Exchanges/Digiflex.png" alt="">
+                  <span class="ecosystem__block-title">Digiflex</span>
                 </a>
               </div>
             </div>
-            <h2 class="ecosystem__title secondary-title">Freeton ecosystem</h2>
+            <h2 class="ecosystem__title secondary-title">Everscale ecosystem</h2>
           </div>
         </div>
       </section>
@@ -300,34 +364,46 @@
         <div class="wrap">
           <div class="gallery__container">
             <div class="gallery__item gallery__item_large">
-              <h2 class="gallery__item-title secondary-title">Build with FT</h2>
-              <p>
-                Developers are the backbone. That is why the FT documents are designed so you can easily find anything
-                you need.
-              </p>
-              <p>
-                Community is the fuel. It is here for you if you want to integrate the TON Crystal token or FreeTON
-                blockchain into your
-                project.
-              </p>
-              <p>
-                The network is a live organizm. It listens to its users’ voices and adapts to their needs. This is what
-                is called
-                decentralization.
-              </p>
+              <a class="gallery__item-link" href="./developers.html"></a>
+              <div class="gallery__item-content">
+                <h2 class="gallery__item-title secondary-title">Build with Everscale</h2>
+                <p class="paragraph-text">
+                  Developers are the backbone. Thus, FT docs are designed so you can easily find anything you need.
+                </p>
+                <p class="paragraph-text">
+                  Community is the fuel. Want to integrate the TON Crystal token or FreeTON blockchain? It’ll be there
+                  for
+                  you
+                </p>
+              </div>
+              <img class="gallery__item-image" srcset="./images/Backgrounds/Main/build-w-ft.jpg 1x,
+                                                                  ./images/Backgrounds/Main/build-w-ft@2x.jpg 2x"
+                alt="">
             </div>
             <div class="gallery__item">
-              <h2 class="gallery__item-title secondary-title">Community</h2>
-              <p>
-                Share your expertise. Find advice. Make connections. Spread your word. Earn rewards.
-              </p>
+              <a class="gallery__item-link" href="./community.html"></a>
+              <div class="gallery__item-content">
+                <h2 class="gallery__item-title secondary-title">Community</h2>
+                <p class="paragraph-text">
+                  Share your expertise. Find advice. Make connections. Spread your word. Earn rewards.
+                </p>
+              </div>
+              <img class="gallery__item-image"
+                srcset="./images/Backgrounds/Main/community.jpg 1x,
+                                                                                ./images/Backgrounds/Main/community@2x.jpg 2x" alt="">
             </div>
             <div class="gallery__item">
-              <h2 class="gallery__item-title secondary-title">Validators</h2>
-              <p>
-                Exactly how validators’ place should look like in 2k21. Easy to set up, low hardware requirements,
-                decent profit
-              </p>
+              <a class="gallery__item-link" href="https://docs.tonalliance.org/validating/validator-guide"></a>
+              <div class="gallery__item-content">
+                <h2 class="gallery__item-title secondary-title">Validators</h2>
+                <p class="paragraph-text">
+                  Exactly how validators’ place should look like in 2k21. Easy to set up, low hardware requirements,
+                  decent profit
+                </p>
+              </div>
+              <img class="gallery__item-image"
+                srcset="./images/Backgrounds/Main/validators.jpg 1x,
+                                                                                ./images/Backgrounds/Main/validators@2x.jpg 2x" alt="">
             </div>
           </div>
         </div>
@@ -356,36 +432,41 @@
             <div class="footer__menu-section">
               <h3>Build</h3>
               <ul>
-                <li><a href="">Docs</a></li>
-                <li><a href="">GitHub</a></li>
-                <li><a href="">Chat on Discord</a></li>
-                <li><a href="">Status</a></li>
+                <li><a href="">Developer Guide</a></li>
+                <li><a href="">TVM</a></li>
+                <li><a href="">Smart Contracts</a></li>
+                <li><a href="">Code Samples</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Join Community</a></li>
               </ul>
             </div>
             <div class="footer__menu-section">
-              <h3>Apply</h3>
+              <h3>Explore</h3>
               <ul>
-                <li><a href="">Grants</a></li>
-                <li><a href="">Collective</a></li>
-                <li><a href="">Careers</a></li>
+                <li><a href="">Individual Guide</a></li>
+                <li><a href="">Institutional Guide</a></li>
+                <li><a href="">Contributor Guide</a></li>
+                <li><a href="">Bridge</a></li>
+                <li><a href="">Farming&NFT</a></li>
+                <li><a href="">Join Community</a></li>
               </ul>
             </div>
             <div class="footer__menu-section">
-              <h3>Learn</h3>
+              <h3>Validate</h3>
               <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Podcast</a></li>
-                <li><a href="">Videos</a></li>
-                <li><a href="">Network Stats</a></li>
+                <li><a href="">Validator Guide</a></li>
+                <li><a href="">DePools Guide</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Join Community</a></li>
               </ul>
             </div>
             <div class="footer__menu-section">
-              <h3>Other</h3>
+              <h3>Integrate</h3>
               <ul>
-                <li><a href="">Break FreeTON</a></li>
-                <li><a href="">Disclaimer</a></li>
-                <li><a href="">Press & Brand</a></li>
+                <li><a href="">Integration Partner Guide</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Community Assistance</a></li>
               </ul>
             </div>
           </nav>

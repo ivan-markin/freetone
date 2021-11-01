@@ -19,18 +19,60 @@
     flex-direction: column;
     justify-content: space-between;
     height: 820px;
+    position: relative;
+    overflow: hidden;
     transition: all .2s;
 
     &:hover {
       background-color: #1B2159;
     }
 
+    &_cli {
+      img {
+        width: 100%;
+        border-radius: 36px;
+        object-fit: cover;
+      }
+    }
+
+    &_scan {
+      justify-content: flex-end;
+    }
+
+    &-content {
+      position: relative;
+      z-index: 7777;
+    }
+
     &-description {
       margin-bottom: 40px;
     }
 
-    img {
+    &-link {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
       width: 100%;
+      height: 100%;
+      z-index: 8888;
+    }
+
+    &-bg {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all .25s;
+    }
+
+    &:hover &-bg {
+      filter: brightness(130%);
     }
 
     .btn {
