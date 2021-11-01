@@ -109,10 +109,13 @@
     }
 
     &-icon {
-      width: 80px;
-      height: 80px;
-      background-color: #181D4E !important;
-      border-radius: 9px !important;
+      width: 60px;
+      height: 60px;
+
+      &_dark {
+        background-color: #181D4E !important;
+        border-radius: 9px !important;
+      }
 
       @media (max-width: 768px) {
         width: 40px;
@@ -130,6 +133,9 @@
     }
 
     &-description {
+      height: 48px;
+      text-overflow: ellipsis;
+      overflow-y: hidden;
       margin: 0 0 24px;
     }
 
@@ -145,6 +151,8 @@
       border-radius: 6px;
       background-color: #191E4D;
       white-space: nowrap;
+      color: white;
+      text-decoration: none;
       padding: 0 12px;
       margin: 12px 12px 0 0;
 
