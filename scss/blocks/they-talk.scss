@@ -5,6 +5,7 @@
   &__container {
     display: flex;
     align-items: flex-end;
+    position: relative;
     padding-left: 22px;
 
     @media (max-width: 768px) {
@@ -19,16 +20,16 @@
       height: 160px;
       background: linear-gradient(to right, #0D1033 0%, #0D1033 21.88%, rgba(15, 24, 55, 0) 100%);
       position: absolute;
-      left: 360px;
+      left: 300px;
       top: 0;
       z-index: 8888;
 
       @media (max-width: 1366px) {
-        left: 302px;
+        left: 270px;
       }
 
       @media (max-width: 1024px) {
-        left: 232px;
+        left: 202px;
       }
     }
 
@@ -39,7 +40,7 @@
       height: 160px;
       background: linear-gradient(to left, #0D1033 0%, #0D1033 21.88%, rgba(15, 24, 55, 0) 100%);
       position: absolute;
-      right: 0;
+      right: -80px;
       top: 0;
       z-index: 8888;
     }

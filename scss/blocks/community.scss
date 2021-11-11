@@ -90,17 +90,17 @@
 
     &_wide {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 40%;
-      gap: 24px;
+      grid-template-columns: 1fr 1fr 40%;
+      gap: 60px;
       grid-column: 1 / 5;
       align-items: flex-start;
 
       @media (max-width: 1024px) {
-        grid-template-columns: 1fr 1fr 1fr 20%;
+        grid-template-columns: 1fr 1fr 20%;
       }
 
       @media (max-width: 768px) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
 
       @media (max-width: 580px) {
@@ -118,7 +118,7 @@
         @media (max-width: 768px) {
           order: -1;
           grid-column: 1 / 4;
-          flex-direction: row-reverse;
+          flex-direction: row;
           align-items: center;
           padding-bottom: 40px;
 

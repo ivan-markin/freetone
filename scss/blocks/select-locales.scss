@@ -1,5 +1,6 @@
 .select-locales {
   position: relative;
+  opacity: .7;
 
   &__button {
     display: flex;
@@ -12,7 +13,7 @@
     font-size: 16px;
     color: white;
     border: none;
-    cursor: pointer;
+    // cursor: pointer;
     padding: 0 12px;
 
     &::before {

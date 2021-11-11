@@ -1,3 +1,12 @@
+@keyframes blocks-animation {
+  from {
+    transform: translateX(67%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .ecosystem {
   margin-bottom: 24px;
 
@@ -67,6 +76,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 150%;
+    animation: blocks-animation 60s infinite linear;
 
     @media (max-width: 420px) {
       width: 2000%;

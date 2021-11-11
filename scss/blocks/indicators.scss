@@ -29,7 +29,7 @@
     min-height: 297px;
     border-radius: 18px;
     background-color: var(--color-cards);
-    padding: 60px;
+    padding: 40px;
 
     &:not(:last-of-type) {
       margin-right: 24px;
@@ -62,7 +62,7 @@
     margin-bottom: 8px;
 
     @media (max-width: 1440px) {
-      font-size: 40px;
+      font-size: 36px;
     }
   }
 

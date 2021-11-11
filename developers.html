@@ -25,9 +25,10 @@
             <h2 class="submenu-popup__title secondary-title">Network</h2>
           </div>
           <ul class="submenu-popup__menu">
-            <li class="submenu-popup__menu-item"><a href="https://docs.tonalliance.org/about/introduction
+            <li class="submenu-popup__menu-item"><a class="external-link" href="https://docs.tonalliance.org/about/introduction
           " target="_blank">About</a></li>
-            <li class="submenu-popup__menu-item"><a href="https://tonscan.io/" target="_blank">Block Explorer</a></li>
+            <li class="submenu-popup__menu-item"><a class="external-link" href="https://tonscan.io/"
+                target="_blank">Block Explorer</a></li>
           </ul>
         </div>
       </div>
@@ -70,7 +71,7 @@
           <li class="mobile-menu__item">
             <a href="">Network</a>
             <ul class="mobile-menu__sublist">
-              <li class="mobile-menu__subitem"><a href="">About</a></li>
+              <li class="mobile-menu__subitem"><a class="external-link" href="">About</a></li>
               <li class="mobile-menu__subitem"><a class="external-link" href="">Block exlorer</a></li>
             </ul>
           </li>
@@ -86,9 +87,9 @@
           </a>
           <nav class="header__menu main-menu">
             <ul>
-              <li><a class="main-menu__item expanded" href="developers.html" id="developersLink">Developers</a></li>
+              <li><a class="main-menu__item" href="developers.html" id="developersLink">Developers</a></li>
               <li><a class="main-menu__item" href="community.html">Community</a></li>
-              <li><a class="main-menu__item expanded" href="" id="networkLink">Network</a></li>
+              <li><a class="main-menu__item expanded" id="networkLink">Network</a></li>
               <li><a class="main-menu__item" href="ecosystem.html">Ecosystem</a></li>
             </ul>
           </nav>
@@ -121,10 +122,10 @@
                 And take all benefits of decentralization
               </p>
               <div class="hero-section__cta" data-scroll>
-                <a class="btn btn_primary" href="https://docs.tonalliance.org/developing/developer-guide">Learn
+                <a class="btn btn_primary" href="https://github.com/tonlabs/tondev/blob/main/docs/quick_start.md">Build
+                  now</a>
+                <a class="btn btn_secondary" href="https://docs.tonalliance.org/developing/developer-guide">Learn
                   documentation</a>
-                <a class="btn btn_secondary"
-                  href="https://github.com/tonlabs/tondev/blob/main/docs/quick_start.md">Build now</a>
               </div>
             </div>
             <div class="hero-section__bg">
@@ -276,7 +277,7 @@
                 <img
                   srcset="./images/Backgrounds/Developers/tonos-cli.jpg 1x, ./images/Backgrounds/Developers/tonos-cli@2x.jpg 2x"
                   alt="">
-                <div>
+                <div class="ton-tools__item-content">
                   <div class="ton-tools__item-title-block">
                     <h2 class="card__title secondary-title">Tonos CLI</h2>
                     <p class="ton-tools__item-description card__description paragraph-text">
@@ -286,9 +287,10 @@
                       most operating systems
                     </p>
                   </div>
-                  <a class="ton-tools__item-button btn btn_primary" href="https://github.com/tonlabs/ton-dev-cli">Build
-                    now</a>
+                  <!-- <a class="ton-tools__item-button btn btn_primary" href="https://github.com/tonlabs/ton-dev-cli">Build
+                    now</a> -->
                 </div>
+                <a class="ton-tools__item-link" href="https://github.com/tonlabs/ton-dev-cli"></a>
               </div>
               <div class="ton-tools__item ton-tools__item_scan card swiper-slide">
                 <div class="ton-tools__item-content">
@@ -301,8 +303,9 @@
                       most operating systems
                     </p>
                   </div>
-                  <a class="ton-tools__item-button btn btn_primary" href="https://tonscan.io/">Explore</a>
+                  <!-- <a class="ton-tools__item-button btn btn_primary" href="https://tonscan.io/">Explore</a> -->
                 </div>
+                <a class="ton-tools__item-link" href="https://tonscan.io/"></a>
                 <img class="ton-tools__item-bg"
                   srcset="./images/Backgrounds/Developers/ton-scan.jpg, ./images/Backgrounds/Developers/ton-scan@2x.jpg 2x"
                   alt="">
@@ -317,13 +320,18 @@
         <div class="wrap">
           <div class="github-docs__container" data-scroll>
             <div class="github-docs__item card">
-              <div class="github-docs__item-icon icon icon_72">
-                <img src="./images/icons/developers/github.svg" alt="">
+              <div class="github-docs__title-block">
+                <div class="github-docs__item-icon icon icon_72">
+                  <img src="./images/icons/developers/github.svg" alt="">
+                </div>
+                <h2 class="github-docs__item-title card__title secondary-title">
+                  <a href="">Github</a>
+                </h2>
+                <p class="github-docs__item-description card__description paragraph-text">
+                  Join the developers community, explore all Free TON features and and effectively implement your
+                  project.
+                </p>
               </div>
-              <h2 class="card__title secondary-title">Github</h2>
-              <p class="github-docs__item-description card__description paragraph-text">
-                Join the developers community, explore all Free TON features and and effectively implement your project.
-              </p>
               <div class="buttons-grid">
                 <a class="button-link button-link_wide button-link_ext"
                   href="https://docs.tonalliance.org/validating/validator-guide">
@@ -370,13 +378,17 @@
               </div>
             </div>
             <div class="github-docs__item card">
-              <div class="github-docs__item-icon icon icon_72">
-                <img src="./images/icons/developers/docs.svg" alt="">
+              <div class="github-docs__title-block">
+                <div class="github-docs__item-icon icon icon_72">
+                  <img src="./images/icons/developers/docs.svg" alt="">
+                </div>
+                <h2 class="github-docs__item-title card__title secondary-title">
+                  <a href="">Docs</a>
+                </h2>
+                <p class="github-docs__item-description card__description paragraph-text">
+                  Find all the information on the network in our documentation.
+                </p>
               </div>
-              <h2 class="card__title secondary-title">Docs</h2>
-              <p class="github-docs__item-description card__description paragraph-text">
-                Find all the information on the network in our documentation.
-              </p>
               <div class="buttons-grid">
                 <a class="button-link" href="https://docs.tonalliance.org/developing/developer-guide">
                   <div class="button-link__icon icon icon_24">
@@ -438,7 +450,7 @@
         </div>
       </section>
 
-      <section class="videos" data-scroll-section>
+      <!-- <section class="videos" data-scroll-section>
         <div class="wrap">
           <div class="videos__title-block" data-scroll>
             <h2 class="videos__title primary-title">Videos</h2>
@@ -512,7 +524,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="ecosystem" data-scroll-section>
         <div class="wrap">

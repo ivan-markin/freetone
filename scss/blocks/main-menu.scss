@@ -18,6 +18,7 @@
         text-decoration: none;
         transition: all .1s;
         position: relative;
+        cursor: pointer;
 
         &.expanded {
           &:after {

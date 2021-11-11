@@ -12,9 +12,24 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &-icon {
       margin-bottom: 36px;
+    }
+
+    &-title {
+      a {
+        color: white;
+        text-decoration: none;
+        transition: all .2s;
+
+        &:hover {
+          color: var(--color-hover);
+        }
+      }
     }
 
     &-description {

@@ -1,4 +1,4 @@
-import LocomotiveScroll from 'locomotive-scroll';
+// import LocomotiveScroll from 'locomotive-scroll';
 import Swiper from 'swiper';
 import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 
@@ -75,10 +75,10 @@ const swiperTheytalk = new Swiper('.swiper-theytalk', {
   },
 })
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('[data-scroll-container]'),
-  smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector('[data-scroll-container]'),
+//   smooth: true
+// });
 
 const menuBurgerEl = document.querySelector('.menu-burger');
 const menuPopupEl = document.querySelector('.mobile-menu-popup');
@@ -93,34 +93,6 @@ const submenuPopupElements = document.querySelectorAll('.submenu-popup');
 
 function openLocalesSelect(event) {
   event.target.closest('.select-locales').classList.toggle('active');
-  // setTimeout(() => {
-  //   document.addEventListener('click', (event) => {
-  //     if (!event.target.classList.contains('select-locales__list')) {
-  //       collapseLocalesSelect(event);
-  //     }
-  //   });
-  //   document.addEventListener('keydown', (event) => {
-  //     if (event.code == 'Escape') {
-  //       collapseLocalesSelect(event);
-  //     }
-  //   })
-  // }, 0);
-}
-
-function collapseLocalesSelect(event) {
-  localesElements.forEach(el => {
-    el.classList.remove('active');
-  })
-  document.removeEventListener('click', (event) => {
-    if (!event.target.classList.contains('select-locales__list')) {
-      collapseLocalesSelect(event);
-    }
-  });
-  document.removeEventListener('keydown', (event) => {
-    if (event.code == 'Escape') {
-      collapseLocalesSelect(event);
-    }
-  })
 }
 
 menuBurgerEl.addEventListener('click', () => {
@@ -131,9 +103,9 @@ menuPopupCloseButtonEl.addEventListener('click', () => {
   menuPopupEl.classList.remove('active');
 })
 
-localesSelects.forEach(el => {
-  el.addEventListener('click', openLocalesSelect);
-})
+// localesSelects.forEach(el => {
+//   el.addEventListener('click', openLocalesSelect);
+// })
 
 menuLinks.forEach(link => {
   link.addEventListener('mouseover', () => {
@@ -141,9 +113,9 @@ menuLinks.forEach(link => {
       el.classList.remove('active');
     })
     switch (link.id) {
-      case 'developersLink':
-        submenuPopupDeleopers.classList.add('active');
-        break;
+      // case 'developersLink':
+      //   submenuPopupDeleopers.classList.add('active');
+      //   break;
       case 'networkLink':
         submenuPopupNetwork.classList.add('active');
         break;
